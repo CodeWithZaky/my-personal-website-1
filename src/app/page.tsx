@@ -4,9 +4,9 @@ import profilIMG from "@/assets/profil2.jpg";
 
 const Home = () => {
   return (
-    <main className="border border-red-500 h-full flex justify-center items-center">
-      <div className="border flex flex-row justify-around items-start w-[80%] mx-auto font-mono">
-        <div className="border w-7/12 space-y-7">
+    <main className="h-full flex justify-center items-center">
+      <div className="flex flex-row justify-around items-start w-[80%] mx-auto font-mono">
+        <div className="w-7/12 space-y-7">
           <div className="font-bold text-5xl space-y-2 pt-4">
             <p>Hi, I am John,</p>
             <p>Creative Technologist</p>
@@ -16,13 +16,13 @@ const Home = () => {
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </p>
-          <div className="border">
+          <div>
             <button className="bg-red-400 text-white text-xl py-3 px-4 rounded-sm">
               Download Resume
             </button>
           </div>
         </div>
-        <div className="border w-4/12 flex justify-end items-center pr-5">
+        <div className="w-4/12 flex justify-end items-center pr-5">
           <Image
             alt="profil image"
             src={profilIMG}

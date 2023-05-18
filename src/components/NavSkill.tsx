@@ -11,7 +11,7 @@ const NavSkill = () => {
       <Link
         href={"/skill/all"}
         className={`px-3 py-1 bg-red-400 text-white text-xl rounded-sm ${
-          pathname == "/skill" || "/skill/all" ? "bg-red-500" : ""
+          pathname == "/skill/all" && "bg-red-500"
         }`}
       >
         All
