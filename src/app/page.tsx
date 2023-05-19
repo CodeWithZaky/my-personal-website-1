@@ -1,6 +1,10 @@
-import React from "react";
 import Image from "next/image";
 import profilIMG from "@/assets/profil2.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home - Portfolio",
+};
 
 const Home = () => {
   return (
@@ -8,7 +12,7 @@ const Home = () => {
       <div className="flex flex-row justify-between items-start w-[80%] mx-auto font-mono border border-red-500 px-10">
         <div className="w-7/12 space-y-7 border">
           <div className="font-bold text-5xl space-y-2 pt-4">
-            <p>Hi, I am John,</p>
+            <p>Hi, I am Zaky,</p>
             <p>Creative Technologist</p>
           </div>
           <p>

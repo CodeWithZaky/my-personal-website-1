@@ -1,11 +1,5 @@
 import "@/src/app/globals.css";
-// import Provider from "./provider";
 import Navbar from "../components/Navbar";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Home",
-};
 
 interface Props {
   children: React.ReactNode;
