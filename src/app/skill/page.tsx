@@ -19,7 +19,7 @@ const About = () => {
     }, 1000);
   }, [push]);
   return (
-    <div className="flex flex-col justify-center items-start gap-7 border border-red-500 w-[80%] m-auto px-5 pb-5">
+    <div className="flex flex-col justify-center items-start gap-7 border border-red-500 w-[80%] mx-auto px-5 pb-5">
       <div className="font-bold text-4xl font mono mb-5">My Skills</div>
       <NavSkill />
       <div className="grid grid-cols-4 text-8xl gap-7 border">
