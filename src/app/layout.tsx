@@ -1,4 +1,4 @@
-import "@/src/app/globals.css";
+import "../../node_modules/tailwindcss/tailwind.css";
 import Navbar from "../components/Navbar";
 
 interface Props {
