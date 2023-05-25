@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <main className="h-full flex justify-center items-center border">
-      <div className="flex flex-row justify-between items-start w-[80%] mx-auto font-mono border border-red-500 px-10">
+    <main className="h-full flex justify-center items-center border m-auto">
+      <div className="flex flex-row justify-between items-start w-[80%] mx-auto font-mono border border-red-500 px-10 pb-10">
         <div className="w-7/12 space-y-7 border">
-          <div className="font-bold text-5xl space-y-2 pt-4">
+          <div className="font-bold text-5xl space-y-2">
             <p>Hi, I am Zaky,</p>
             <p>Creative Technologist</p>
           </div>

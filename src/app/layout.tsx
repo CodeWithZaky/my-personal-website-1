@@ -8,8 +8,8 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body>
-        <main className="container-none w-full border h-screen">
-          <div className="container mx-auto h-full flex flex-col border">
+        <main className="container-none w-full border min-h-screen">
+          <div className="container mx-auto min-h-screen flex flex-col border">
             <Navbar />
             {children}
           </div>

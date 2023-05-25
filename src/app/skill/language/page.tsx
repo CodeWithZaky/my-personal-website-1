@@ -1,4 +1,4 @@
-import { icons_language } from "@/src/components/icons";
+import { icons_language } from "@/src/components/icons-skill";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
