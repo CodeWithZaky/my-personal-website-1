@@ -1,8 +1,7 @@
 "use client";
-import NavSkill from "@/src/components/NavSkill";
 import { useEffect } from "react";
-import { icons_all } from "@/src/components/icons-skill";
 import { useRouter } from "next/navigation";
+
 const About = () => {
   const { push } = useRouter();
   useEffect(() => {
