@@ -1,6 +1,6 @@
 import "../../node_modules/tailwindcss/tailwind.css";
+import MainNavbar from "../components/MainNavbar";
 import LatestProject from "../components/latest-project";
-import Navbar from "../components/navbar";
 import TriangleHome from "../components/triangle-home";
 
 interface Props {
@@ -11,7 +11,7 @@ export default function RootLayout({ children }: Props) {
     <html lang="en">
       <body>
         <main className="container-none w-full min-h-screen bg-slate-100">
-          <Navbar />
+          <MainNavbar />
           <section className="bg-black w-full relative">
             <TriangleHome />
             <div className="relative mx-auto w-[70%] flex flex-col border-x border-slate-300">
