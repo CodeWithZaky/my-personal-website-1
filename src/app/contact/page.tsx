@@ -1,4 +1,4 @@
-import { contact_icons } from "@/src/components/contact-icons";
+import { contact_icons } from "@/src/utils/contact-icons";
 const Contact = () => {
   return (
     <div className="flex flex-col border border-red-500 w-[70%] m-auto space-y-3 pb-10">

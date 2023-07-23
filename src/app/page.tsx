@@ -1,6 +1,7 @@
 import Image from "next/image";
 import profilIMG from "@/assets/profil2.jpg";
 import { Metadata } from "next";
+import ButtonLearnMore from "../components/button-learn-more";
 
 export const metadata: Metadata = {
   title: "Home - Portfolio",
@@ -8,31 +9,11 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <div className="flex flex-row justify-between items-start w-[70%] m-auto font-mono border border-red-500 pb-10">
-      <div className="w-7/12 space-y-7 border">
-        <div className="font-bold text-5xl space-y-2">
-          <p>Hi, I am Zaky,</p>
-          <p>Creative Technologist</p>
-        </div>
-        <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <div>
-          <button className="bg-red-400 text-white text-xl py-3 px-4 rounded-sm">
-            Download Resume
-          </button>
-        </div>
-      </div>
-      <div className="w-4/12 flex justify-end items-center pr-5 border">
-        <Image
-          alt="profil image"
-          src={profilIMG}
-          width={250}
-          className="bg-no-repeat object-cover rounded-full"
-        />
-      </div>
+    <div className="flex flex-col justify-center items-center m-auto border border-red-500 gap-4 py-20">
+      <h3 className="text-2xl font-bold">welcome to my portfolio</h3>
+      <h1 className="text-8xl font-bold">{"I'M ZAKY"}</h1>
+      <h1 className="text-5xl font-bold">{"FRONTEND WEB DEVELOPER"}</h1>
+      <ButtonLearnMore />
     </div>
   );
 };
