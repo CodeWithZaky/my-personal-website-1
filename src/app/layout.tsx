@@ -1,7 +1,5 @@
 import "../../node_modules/tailwindcss/tailwind.css";
 import MainNavbar from "../components/MainNavbar";
-import LatestProject from "../components/latest-project";
-import TriangleHome from "../components/triangle-home";
 
 interface Props {
   children: React.ReactNode;

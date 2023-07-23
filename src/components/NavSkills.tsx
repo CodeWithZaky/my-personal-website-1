@@ -2,7 +2,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-const NavSkill = () => {
+const NavSkills = () => {
   const pathname = usePathname();
 
   return (
@@ -43,4 +43,4 @@ const NavSkill = () => {
   );
 };
 
-export default NavSkill;
+export default NavSkills;

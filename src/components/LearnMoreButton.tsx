@@ -1,4 +1,4 @@
-const buttonLearnMore = () => {
+const LearnMoreButton = () => {
   return (
     <div className="relative border border-slate-200 p-2 flex justify-center items-center z-1 my-4">
       <button className="bg-red-500 text-2xl text-center font-semibold text-white px-10 py-2 z-10">
@@ -8,4 +8,4 @@ const buttonLearnMore = () => {
     </div>
   );
 };
-export default buttonLearnMore;
+export default LearnMoreButton;
