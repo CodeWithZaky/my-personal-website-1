@@ -9,7 +9,7 @@ const NavSkill = () => {
     <div className="flex flex-row gap-5 font-mono">
       <Link
         href={"/skill/all"}
-        className={`px-3 py-1 bg-red-400 text-white text-xl rounded-sm ${
+        className={`px-3 py-1 bg-black/70 text-white text-xl rounded-sm ${
           pathname == "/skill/all" && "bg-red-500"
         }`}
       >
@@ -17,7 +17,7 @@ const NavSkill = () => {
       </Link>
       <Link
         href={"/skill/language"}
-        className={`px-3 py-1 bg-red-400 text-white text-xl rounded-sm ${
+        className={`px-3 py-1 bg-black/70 text-white text-xl rounded-sm ${
           pathname == "/skill/language" && "bg-red-500"
         }`}
       >
@@ -25,7 +25,7 @@ const NavSkill = () => {
       </Link>
       <Link
         href={"/skill/library"}
-        className={`px-3 py-1 bg-red-400 text-white text-xl rounded-sm ${
+        className={`px-3 py-1 bg-black/70 text-white text-xl rounded-sm ${
           pathname == "/skill/library" && "bg-red-500"
         }`}
       >
@@ -33,7 +33,7 @@ const NavSkill = () => {
       </Link>
       <Link
         href={"/skill/framework"}
-        className={`px-3 py-1 bg-red-400 text-white text-xl rounded-sm ${
+        className={`px-3 py-1 bg-black/70 text-white text-xl rounded-sm ${
           pathname == "/skill/framework" && "bg-red-500"
         }`}
       >
