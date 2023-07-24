@@ -14,7 +14,8 @@ const Home = () => {
       <section className="bg-black w-full relative">
         <Triangle />
         <div className="relative mx-auto w-[70%] flex flex-col border-x border-valorantWhite">
-          <div className="flex flex-col justify-center items-center m-auto gap-5 py-20">
+          <div className="w-full flex flex-col justify-center items-center m-auto gap-4 py-16">
+            <div className="w-[15px] h-[15px] bg-valorant self-start" />
             <h3 className="text-2xl font-bold text-valorantWhite text-center">
               welcome to my portfolio
             </h3>
@@ -26,7 +27,6 @@ const Home = () => {
             </h1>
             <LearnMoreButton />
           </div>
-          <div className="w-[15px] h-[15px] bg-valorant absolute left-0 top-20" />
           <div className="w-[1px] h-[100%] bg-valorantWhite absolute left-[300px] top-0" />
         </div>
       </section>
