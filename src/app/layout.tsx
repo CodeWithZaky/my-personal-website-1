@@ -8,7 +8,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body>
-        <main className="container-none w-full min-h-screen bg-slate-100">
+        <main className="container-none w-full min-h-screen">
           <MainNavbar />
           {children}
         </main>
