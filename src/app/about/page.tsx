@@ -6,10 +6,16 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <div className="w-full h-[100vh] bg-valorantWhite flex justify-center items-center relative">
-      <div className="w-[70%] h-full border-l-2 border-black flex justify-start items-start">
-        <div className="w-full flex flex-col justify-center items-start space-y-5 mt-10">
-          <p className="text-8xl font-bold border">ABOUT ME</p>
+    <div className="w-full h-[100vh] bg-valorantWhite flex justify-end items-center">
+      <div className="w-[85%] h-full border-l-2 border-black flex justify-start items-start">
+        <div className="w-full  flex flex-col justify-center items-start space-y-5 mt-10">
+          <div className="flex justify-between w-full ">
+            <p className="text-8xl font-bold ">ABOUT ME</p>
+            <div className="flex w-[40%] flex-col justify-end items-center gap-4 ">
+              <div className="w-full h-[100px] bg-valorant" />
+              <div className="w-full h-[3px] bg-valorant" />
+            </div>
+          </div>
           <div className="bg-valorant w-[20px] h-[20px]" />
           <div className="space-y-2 font-semibold">
             <p>
@@ -39,10 +45,6 @@ const About = () => {
           </div>
           <div className="w-[20px] h-[20px] bg-valorant self-end" />
         </div>
-      </div>
-      <div className="absolute top-[3rem] right-0 w-[500px] flex flex-col items-end gap-4">
-        <div className="w-full h-[100px] bg-valorant" />
-        <div className="w-full h-[3px] bg-valorant" />
       </div>
     </div>
   );
