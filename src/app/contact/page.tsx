@@ -28,7 +28,7 @@ const ContactPage = () => {
         </section>
         <section className="w-[70%] flex flex-col justify-center items-center text-valorantWhite gap-10">
           <div className="text-5xl font-semibold">CONTACT US</div>
-          <div className="flex flex-row justify-center items-center text-5xl gap-7">
+          <div className="flex flex-row flex-wrap justify-center items-center text-5xl gap-7">
             {contacts.map((contact, index) => {
               return (
                 <div key={index} className="p-5 bg-white/10 rounded-3xl">
