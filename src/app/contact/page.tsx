@@ -38,10 +38,10 @@ const ContactPage = () => {
             })}
           </div>
           <p className="text-center text-lg">
-            @2023 Ahmad Zaky Ubaidillah, PORTFOLIO, DAN SEMUA LOGO TERKAIT
-            ADALAH MEREK DAGANG,
+            @2023 Ahmad Zaky Ubaidillah, PORTFOLIO, AND ANY ASSOCIATED LOGOS ARE
+            TRADEMARKS, SERVISE
             <br />
-            MEREK LAYANAN, DAN/ATAU MEREK DAGANG OLEH PENGEMBANG.
+            MARKS,AND/OR TRADEMARKS BY DEVELOPER
           </p>
         </section>
         <section className="w-[15%] relative">
