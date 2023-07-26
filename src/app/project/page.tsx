@@ -29,6 +29,11 @@ const Card = ({ num }: { num: number }) => {
   );
 };
 
+const card_items: React.ReactNode[] = [];
+for (let i = 1; i <= 6; i++) {
+  card_items.push(<Card num={i} />);
+}
+
 const Project = () => {
   return (
     <div className="min-h-screen w-full bg-valorantWhite">
@@ -41,14 +46,15 @@ const Project = () => {
           <div className="w-[10px] h-[10px] bg-valorant" />
           <h1 className="text-8xl font-bold">PROJECTS</h1>
           <div className="grid grid-cols-2 border-b-2 border-black">
-            <Card num={1} />
+            {/* <Card num={1} />
             <Card num={2} />
             <Card num={3} />
             <Card num={4} />
             <Card num={5} />
             <Card num={6} />
             <Card num={7} />
-            <Card num={8} />
+            <Card num={8} /> */}
+            {card_items}
           </div>
         </div>
         <div className="w-[20%] border-t-2 border-t-valorant" />
