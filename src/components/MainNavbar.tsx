@@ -33,7 +33,7 @@ const MainNavbar = () => {
       </div>
       <section
         className={`${
-          toggle ? "hidden" : "flex"
+          toggle ? "flex" : "hidden"
         } w-full h-full absolute top-0 right-0 z-20`}
       >
         <div
