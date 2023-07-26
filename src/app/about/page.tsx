@@ -17,7 +17,7 @@ const About = () => {
             </div>
           </div>
           <div className="bg-valorant w-[20px] h-[20px]" />
-          <div className="space-y-2 font-semibold">
+          <div className="space-y-2 font-semibold pr-5 md:pr-0">
             <p>
               My name is Ahmad Zaky Ubaidillah, but you can call me Zaky or
               Ubed.

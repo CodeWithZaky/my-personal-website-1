@@ -2,7 +2,7 @@ import React from "react";
 
 const LatestProject = () => {
   return (
-    <div className="flex flex-col justify-center items-start gap-1">
+    <div className="flex flex-col justify-center items-start gap-1  w-[90%] lg:w-[100%]">
       <div className="w-[300px] h-[150px] bg-valorant" />
       <h3 className="font-semibold">
         {"12/12/12 . "}
