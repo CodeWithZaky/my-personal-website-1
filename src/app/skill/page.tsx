@@ -5,7 +5,7 @@ const skills = ["next js", "tailwind", "typescript", "redux toolkit"];
 const TriangleSkill = () => {
   return (
     <div className="w-auto overflow-hidden inline-block absolute bottom-0 right-0">
-      <div className="h-[500px] w-[270px] bg-valorantWhite rotate-45 transform origin-bottom-left"></div>
+      <div className="h-[200px] w-[100px] md:h-[500px] md:w-[270px] bg-valorantWhite rotate-45 transform origin-bottom-left"></div>
     </div>
   );
 };
@@ -22,7 +22,7 @@ const Skill = () => {
           <div className="w-[100px] h-[10px] bg-valorant absolute bottom-[3rem] right-0" />
         </div>
         <div className="w-[80%] h-full bg-valorantYellow border-l-2 border-white space-y-8">
-          <h1 className="text-8xl font-bold">MY SKILLS</h1>
+          <h1 className="text-6xl md:text-8xl font-bold">MY SKILLS</h1>
           <div className="space-y-3">
             {skills.map((skill, index) => {
               return (
