@@ -1,14 +1,14 @@
 const CardProject = ({ num }: { num: number }) => {
   return (
-    <div className="w-[400px] pr-10 py-5 pl-5 relative border-l-2 border-t-2 border-black">
-      <div className="h-[150px] w-[90%] bg-valorant " />
+    <div className="p-5 relative border border-black">
+      <div className="aspect-video bg-valorant" />
       <div className="flex flex-col justify-center">
-        <div className="flex flex-row justify-start items-center">
-          <p className="font-semibold">{"12/12/12"}</p>
-          <p className="font-bold">{"."}</p>
-          <p className="text-sm font-semibold text-valorant">
+        <div className="flex flex-col md:flex-row justify-start items-start">
+          <span className="font-semibold">{"12/12/12"}</span>
+          <span className="hidden md:block font-bold">{"."}</span>
+          <span className="text-sm font-semibold text-valorant">
             next js, tailwind, redux toolkit
-          </p>
+          </span>
         </div>
         <p className="font-semibold">
           Growth Familie merupakan aplikasi berbasis web yang mengusung tema

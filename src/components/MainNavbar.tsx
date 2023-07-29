@@ -5,13 +5,14 @@ import React, { useState } from "react";
 import logoz2 from "@/assets/logoz2.svg";
 import { IoCloseSharp } from "react-icons/io5";
 
-const MainNavbar = () => {
-  const [toggle, setToggle] = useState(false);
-  const toggleButton = () => {
-    setToggle(!toggle);
-  };
-
-  console.log(toggle);
+const MainNavbar = ({
+  toggleButton,
+  toggle,
+}: {
+  toggleButton: () => void;
+  toggle: boolean;
+}) => {
+  console.log(toggleButton);
 
   return (
     <div className="w-full h-[90px]  bg-black border-b border-white/5 flex justify-between md:justify-center items-center gap-10">
@@ -32,9 +33,9 @@ const MainNavbar = () => {
         <div className="w-[30px] h-[5px] rounded-md bg-valorantWhite" />
       </div>
       <section
-        className={`${
-          toggle ? "flex" : "hidden"
-        } w-full h-full absolute top-0 right-0 z-20`}
+        className={
+          toggle ? "flex w-full h-full absolute top-0 right-0 z-20" : "hidden"
+        }
       >
         <div
           onClick={toggleButton}
@@ -50,7 +51,7 @@ const MainNavbar = () => {
               className="mr-10 text-3xl text-valorantWhite"
             />
           </div>
-          <div className="h-full flex flex-col justify-center items-center gap-20 font-bold font-mono text-xl text-valorantWhite ">
+          <div className="flex flex-col justify-center items-center gap-20 font-bold font-mono text-xl text-valorantWhite ">
             <Link href={"/"}>HOME</Link>
             <Link href={"/about"}>ABOUT</Link>
             <Link href={"/skill"}>SKILL</Link>
