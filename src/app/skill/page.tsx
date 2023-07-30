@@ -1,5 +1,11 @@
 "use client";
 
+import { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+  title: "Skill - Portfolio",
+};
+
 const skills = ["next js", "tailwind", "typescript", "redux toolkit"];
 
 const TriangleSkill = () => {

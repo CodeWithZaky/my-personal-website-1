@@ -1,7 +1,7 @@
-import { Metadata } from "next";
-import LearnMoreButton from "../components/home/LearnMoreButton";
-import Triangle from "../components/Triangle";
-import LatestProject from "../components/home/LatestProject";
+import LearnMoreButton from "../components/pages/home/LearnMoreButton";
+import Triangle from "../components/ornaments/Triangle";
+import LatestProject from "../components/pages/home/LatestProject";
+import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
   title: "Home - Portfolio",
@@ -30,7 +30,7 @@ const Home = () => {
           <div className="w-[1px] h-[100%] bg-valorantWhite absolute left-[300px] top-0" />
         </div>
       </section>
-      <section className="LATEST-PROJECT w-full bg-valorantWhite">
+      <section className="w-full bg-valorantWhite">
         <div className="mx-auto w-[70%] flex flex-col border-l border-black py-10 gap-3">
           <div className="text-5xl md:text-7xl text-valorant font-extrabold">
             LATEST PROJECT
