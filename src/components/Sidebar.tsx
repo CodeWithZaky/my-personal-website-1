@@ -17,13 +17,17 @@ const Sidebar = ({ toggleButton, toggle }: Props) => {
     >
       <div
         onClick={toggleButton}
-        className="w-[40%] backdrop-blur-md bg-black/30"
+        className="w-[40%] backdrop-blur-sm bg-black/30"
       />
       <div
-        className={` w-[60%] h-full flex-col justify-start items-center bg-black gap-10 border-l-2  border-l-white/5`}
+        className={
+          "w-[60%] h-full flex-col justify-start items-center bg-black gap-10 border-l-2  border-l-white/5"
+        }
       >
         <div className="w-full h-[90px] border-b border-b-white/5 flex justify-between items-center ">
-          <Image alt="image" src={logoz2} className="h-7 w-auto ml-10" />
+          <Link href={"/"}>
+            <Image alt="image" src={logoz2} className="h-7 w-auto ml-10" />
+          </Link>
           <IoCloseSharp
             onClick={toggleButton}
             className="mr-10 text-3xl text-valorantWhite"
