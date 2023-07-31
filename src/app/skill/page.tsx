@@ -1,7 +1,5 @@
 import { TriangleSkill } from "@/src/components/ornaments/Triangle";
 import { Metadata } from "next/types";
-import valorant1 from "@/assets/valorant1.jpg";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Skill - Portfolio",
