@@ -1,6 +1,7 @@
-"use client";
-
+import { TriangleSkill } from "@/src/components/ornaments/Triangle";
 import { Metadata } from "next/types";
+import valorant1 from "@/assets/valorant1.jpg";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Skill - Portfolio",
@@ -8,26 +9,19 @@ export const metadata: Metadata = {
 
 const skills = ["next js", "tailwind", "typescript", "redux toolkit"];
 
-const TriangleSkill = () => {
-  return (
-    <div className="w-auto overflow-hidden inline-block absolute bottom-0 right-0">
-      <div className="h-[200px] w-[100px] md:h-[500px] md:w-[270px] bg-valorantWhite rotate-45 transform origin-bottom-left"></div>
-    </div>
-  );
-};
-
 const Skill = () => {
   return (
-    <div className="h-screen w-full bg-valorantWhite">
-      <div className="h-[12%] w-full flex">
+    <div className="h-screen w-full">
+      <section className="h-[12%] w-full flex">
         <div className="w-[20%] h-full bg-valorantYellow border-b-2 border-white" />
         <div className="w-[80%] h-full bg-valorantYellow border-b-2 border-l-2 border-white" />
-      </div>
-      <div className="h-[63%] w-full flex relative">
+      </section>
+
+      <section className="h-[63%] w-full flex relative">
         <div className="w-[20%] h-full bg-valorantYellow relative">
-          <div className="w-[100px] h-[10px] bg-valorant absolute bottom-[3rem] right-0" />
+          <div className="w-[100px] h-[3px] bg-valorant absolute bottom-[3rem] right-0" />
         </div>
-        <div className="w-[80%] h-full bg-valorantYellow border-l-2 border-white space-y-8">
+        <div className="w-[80%] h-full text-valorantWhite bg-valorantYellow border-l-2 border-white space-y-8">
           <h1 className="text-6xl md:text-8xl font-bold">MY SKILLS</h1>
           <div className="space-y-3">
             {skills.map((skill, index) => {
@@ -40,9 +34,11 @@ const Skill = () => {
             })}
           </div>
         </div>
-        <TriangleSkill />
-      </div>
-      <div className="h-[15%] w-full flex relative">
+        {/* <TriangleSkill /> */}
+        <div className="h-[100px] w-[100px] bg-valorantWhite absolute right-0 bottom-0" />
+      </section>
+
+      <section className="h-[15%] w-full flex relative">
         <div className="w-[20%] h-full" />
         <div className="w-[80%] h-full border-l-2 border-white">
           <div className="flex flex-row justify-end items-end gap-5 absolute right-0 bottom-5">
@@ -51,11 +47,12 @@ const Skill = () => {
             <div className="w-[100px] h-[10px] bg-valorant" />
           </div>
         </div>
-      </div>
-      <div className="h-[10%] w-full flex">
+      </section>
+
+      <section className="h-[10%] w-full flex">
         <div className="w-[20%] h-full" />
         <div className="w-[80%] h-full border-l-2 border-white" />
-      </div>
+      </section>
     </div>
   );
 };

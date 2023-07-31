@@ -1,5 +1,5 @@
 import LearnMoreButton from "../components/pages/home/LearnMoreButton";
-import Triangle from "../components/ornaments/Triangle";
+import { TriangleHome } from "../components/ornaments/Triangle";
 import LatestProject from "../components/pages/home/LatestProject";
 import { Metadata } from "next/types";
 
@@ -10,9 +10,8 @@ export const metadata: Metadata = {
 const Home = () => {
   return (
     <>
-      {" "}
-      <section className="bg-black w-full relative">
-        <Triangle />
+      <section className="bg-black w-full relative overflow-hidden">
+        <TriangleHome />
         <div className="relative mx-auto w-[70%] flex flex-col border-x border-valorantWhite">
           <div className="w-full flex flex-col justify-center items-center m-auto gap-4 py-16">
             <div className="w-[15px] h-[15px] bg-valorant self-start" />

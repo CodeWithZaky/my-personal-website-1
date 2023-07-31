@@ -3,10 +3,12 @@ import { useState } from "react";
 import "../../node_modules/tailwindcss/tailwind.css";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import clsx from "clsx";
 
 interface Props {
   children: React.ReactNode;
 }
+
 export default function RootLayout({ children }: Props) {
   const [toggle, setToggle] = useState(false);
   const toggleButton = () => {
@@ -16,9 +18,11 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body
-        className={`${
+        className={clsx(
+          "__MANTAB__BRO__",
+          "bg-valorantWhite",
           toggle ? "overflow-hidden" : "evervlow-auto"
-        } bg-valorantWhite`}
+        )}
       >
         <main className="container-none w-full min-h-screen">
           <>
