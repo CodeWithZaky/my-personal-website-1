@@ -1,6 +1,6 @@
 const CardProject = ({ num }: { num: number }) => {
   return (
-    <div className="p-5 relative border border-black">
+    <div className="p-5 relative border border-black/50">
       <div className="aspect-video bg-valorant" />
       <div className="flex flex-col justify-center">
         <div className="flex flex-col md:flex-row justify-start items-start">
