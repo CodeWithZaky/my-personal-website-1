@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 const github = <SiGithub />;
 const instagram = <SiInstagram />;
 const linkedin = <SiLinkedin />;
-const gamil = <SiGmail />;
+const gmail = <SiGmail />;
 const facebook = <SiFacebook />;
-const contacts = [github, instagram, linkedin, gamil, facebook];
+const contacts = [github, instagram, linkedin, gmail, facebook];
 
 const ContactPage = () => {
   return (
@@ -34,7 +34,7 @@ const ContactPage = () => {
           <div className="text-2xl sm:text-3xl md:text-5xl text-center font-semibold">
             CONTACT US
           </div>
-          <div className="flex flex-row flex-wrap justify-center items-center text-3xl sm:text-4xl md:text-5xl gap-7">
+          <div className="flex flex-row flex-wrap justify-center items-center text-2xl sm:text-4xl md:text-5xl gap-7">
             {contacts.map((contact, index) => {
               return (
                 <div key={index} className="p-5 bg-white/10 rounded-3xl">

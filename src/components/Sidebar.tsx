@@ -30,7 +30,7 @@ const Sidebar = ({ toggleButton, toggle }: Props) => {
           </Link>
           <IoCloseSharp
             onClick={toggleButton}
-            className="mr-10 text-3xl text-valorantWhite"
+            className="mr-10 text-4xl text-valorantWhite"
           />
         </div>
         <div className="flex flex-col justify-center items-center gap-20 font-bold font-mono text-xl text-valorantWhite ">
