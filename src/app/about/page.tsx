@@ -7,11 +7,11 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <div className="w-full min-h-screen flex justify-end items-center">
-      <div className="w-[85%] h-[100vh] border-l-2 border-black flex justify-start items-center">
-        <div className="w-full  flex flex-col justify-center items-start space-y-5 mt-10">
+    <div className="flex items-center justify-end w-full min-h-screen">
+      <div className="w-[85%] h-[100vh] border-l border-gray-700 flex justify-start items-center">
+        <div className="flex flex-col items-start justify-center w-full mt-10 space-y-5">
           <div className="flex justify-between w-full mt-3">
-            <p className="text-6xl md:text-7xl lg:text-8xl font-bold">
+            <p className="text-6xl font-bold md:text-7xl lg:text-8xl">
               ABOUT ME
             </p>
             <div className="flex w-0 sm:w-[40%] flex-col justify-end items-center gap-4 ">
@@ -25,8 +25,8 @@ const About = () => {
               return <p key={index}>{item}</p>;
             })}
           </div>
-          <div className="flex flex-col justify-center items-start gap-4">
-            <div className="flex gap-5 self-end">
+          <div className="flex flex-col items-start justify-center gap-4">
+            <div className="flex self-end gap-5">
               <div
                 className={
                   `w-[10px] h-[10px] ` +
