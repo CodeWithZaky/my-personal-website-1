@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio",
+  "homepage": "https://azaku.vercel.app",
   "version": "2.0.0",
   "private": true,
   "scripts": {
