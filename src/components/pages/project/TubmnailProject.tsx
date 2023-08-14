@@ -1,7 +1,7 @@
 import matrixcalc from "@/assets/matrix-calculations.png";
 import numbconv from "@/assets/number-convertion.png";
 import myportfolio from "@/assets/my-portfolio.png";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 const TubmnailComp = ({
   srcTumb,
@@ -9,7 +9,7 @@ const TubmnailComp = ({
   stackTumb,
   textTumb,
 }: {
-  srcTumb: any;
+  srcTumb: StaticImageData;
   dateTumb: string;
   stackTumb: string;
   textTumb: string;

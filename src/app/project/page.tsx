@@ -29,9 +29,9 @@ const Project = () => {
                     //   ? "border-l border-b"
                     //   :
                     index % 2 == 1
-                      ? "border-t border-l border-b"
+                      ? "lg:border-l border-t border-b"
                       : index % 2 == 0
-                      ? "border-r border-t border-b"
+                      ? "lg:border-r border-t border-b"
                       : "",
                     "p-5 border-gray-500"
                   )}
