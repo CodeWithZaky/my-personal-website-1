@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const LearnMoreButton = () => {
   return (
-    <div className="relative border border-slate-200 p-2 flex justify-center items-center z-1 m-4">
+    <div className="relative flex items-center justify-center p-2 m-4 border border-slate-200 z-1">
       <Link
         href={"/about"}
-        className="bg-valorant text-2xl text-center font-semibold text-white px-2 md:px-10 md:py-2 z-10"
+        className="z-10 px-2 text-2xl font-semibold text-center text-white bg-valorant md:px-10 md:py-2"
       >
         Learn more
       </Link>

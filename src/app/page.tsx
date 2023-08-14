@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <>
-      <section className="relative w-full overflow-hidden bg-black">
+    <section>
+      <div className="relative w-full overflow-hidden bg-black">
         <TriangleHome />
         <div className="relative mx-auto w-[70%] flex flex-col border-x border-valorantWhite">
           <div className="flex flex-col items-center justify-center w-full gap-4 py-16 m-auto">
@@ -28,10 +28,10 @@ const Home = () => {
           </div>
           <div className="w-[1px] h-[100%] bg-valorantWhite absolute left-[300px] top-0" />
         </div>
-      </section>
-      <section className="w-full bg-valorantWhite">
+      </div>
+      <div className="w-full bg-valorantWhite">
         <div className="mx-auto w-[70%] flex flex-col border-l border-black py-10 gap-3">
-          <div className="text-5xl font-extrabold md:text-7xl text-valorant">
+          <div className="z-10 text-5xl font-extrabold -mb-7 md:text-7xl text-valorant">
             LATEST PROJECT
           </div>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-1 lg:grid-cols-3">
@@ -40,8 +40,8 @@ const Home = () => {
             })}
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 export default Home;

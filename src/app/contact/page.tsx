@@ -4,6 +4,7 @@ import {
   SiLinkedin,
   SiGmail,
   SiFacebook,
+  SiYoutube,
 } from "react-icons/si";
 
 import { Metadata } from "next/types";
@@ -15,30 +16,50 @@ export const metadata: Metadata = {
   title: "Contact - Portfolio",
 };
 
-const github = <SiGithub />;
-const instagram = <SiInstagram />;
-const linkedin = <SiLinkedin />;
-const gmail = <SiGmail />;
-const facebook = <SiFacebook />;
-const contacts = [github, instagram, linkedin, gmail, facebook];
+const socialIcons: { icon: React.ReactNode; url: string }[] = [
+  {
+    icon: <SiGithub />,
+    url: "./",
+  },
+  {
+    icon: <SiLinkedin />,
+    url: "./",
+  },
+  {
+    icon: <SiInstagram />,
+    url: "./",
+  },
+  {
+    icon: <SiYoutube />,
+    url: "./",
+  },
+  {
+    icon: <SiGmail />,
+    url: "./",
+  },
+  {
+    icon: <SiFacebook />,
+    url: "./",
+  },
+];
 
 const ContactPage = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center bg-black">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-black">
       <section className="w-full min-h-[80vh]  flex flex-row ">
         <section className="relative w-[15%]">
           <RedSquare possition={"top-5 right-0"} />
           <GreySquare possition={"top-[50%] right-0"} />
         </section>
         <section className="w-[70%] flex flex-col justify-center items-center text-valorantWhite gap-10">
-          <div className="text-2xl sm:text-3xl md:text-5xl text-center font-semibold">
+          <div className="text-2xl font-semibold text-center sm:text-3xl md:text-5xl">
             CONTACT US
           </div>
-          <div className="flex flex-row flex-wrap justify-center items-center text-2xl sm:text-4xl md:text-5xl gap-7">
-            {contacts.map((contact, index) => {
+          <div className="flex flex-row flex-wrap items-center justify-center text-2xl sm:text-4xl md:text-5xl gap-7">
+            {socialIcons.map((contact, index) => {
               return (
                 <div key={index} className="p-5 bg-white/10 rounded-3xl">
-                  {contact}
+                  {contact.icon}
                 </div>
               );
             })}
@@ -50,7 +71,7 @@ const ContactPage = () => {
         </section>
       </section>
       <section className="relative w-full h-[20vh]">
-        <div className="absolute flex gap-4 right-0 top-0">
+        <div className="absolute top-0 right-0 flex gap-4">
           <div className="border border-valorant w-[25px] md:w-[50px] h-[15px]" />
           <div className="bg-valorant w-[100px] md:w-[200px] h-[15px]" />
         </div>

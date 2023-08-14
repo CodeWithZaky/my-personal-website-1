@@ -1,51 +1,57 @@
 import { me } from "@/src/components/pages/about/Me";
 import { Metadata } from "next/types";
+import { SiGithub, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
 
 export const metadata: Metadata = {
   title: "About - Portfolio",
 };
+const socialIcons: { icon: React.ReactNode; url: string }[] = [
+  {
+    icon: <SiGithub />,
+    url: "./",
+  },
+  {
+    icon: <SiLinkedin />,
+    url: "./",
+  },
+  {
+    icon: <SiInstagram />,
+    url: "./",
+  },
+  {
+    icon: <SiYoutube />,
+    url: "./",
+  },
+];
+const skills: string[] = ["react js", "next js", "tailwind", "typescript"];
 
 const About = () => {
   return (
-    <div className="flex items-center justify-end w-full min-h-screen">
-      <div className="w-[85%] h-[100vh] border-l border-gray-700 flex justify-start items-center">
-        <div className="flex flex-col items-start justify-center w-full mt-10 space-y-5">
-          <div className="flex justify-between w-full mt-3">
-            <p className="text-6xl font-bold md:text-7xl lg:text-8xl">
-              ABOUT ME
+    <div className="flex flex-col items-start justify-center w-[90%] md:w-[70%] m-auto h-full border-l border-l-gray-900 gap-7 py-10">
+      <p className="text-2xl font-bold md:text-3xl lg:text-4xl">ABOUT ME</p>
+      <div className="flex flex-col gap-5 text-md md:text-xl font-semibold pr-5 md:pr-0 w-full md:w-[80%]">
+        {me.map((item, index) => {
+          return <p key={index}>{item}</p>;
+        })}
+      </div>
+      <div className="flex flex-wrap gap-5">
+        {socialIcons.map((item, index) => {
+          return (
+            <p key={index} className="text-4xl text-black/90">
+              {item.icon}
             </p>
-            <div className="flex w-0 sm:w-[40%] flex-col justify-end items-center gap-4 ">
-              <div className="w-full h-[100px] bg-valorant" />
-              <div className="w-full h-[3px] bg-valorant" />
-            </div>
-          </div>
-          <div className="bg-valorant w-[20px] h-[20px]" />
-          <div className="space-y-2 text-md md:text-xl font-semibold pr-5 md:pr-0 w-full md:w-[80%]">
-            {me.map((item, index) => {
-              return <p key={index}>{item}</p>;
-            })}
-          </div>
-          <div className="flex flex-col items-start justify-center gap-4">
-            <div className="flex self-end gap-5">
-              <div
-                className={
-                  `w-[10px] h-[10px] ` +
-                  `md:w-[20px] md:h-[20px] ` +
-                  `bg-valorant`
-                }
-              />
-              <div
-                className={
-                  `w-[10px] h-[10px] ` +
-                  `md:w-[20px] md:h-[20px] ` +
-                  `bg-valorant`
-                }
-              />
-            </div>
-            <div className="w-[200px] h-[50px] md:w-[400px] md:h-[100px] bg-valorant" />
-          </div>
-          <div className="w-[20px] h-[20px] bg-valorant self-end" />
-        </div>
+          );
+        })}
+      </div>
+      <div className="inline-flex flex-wrap gap-1 font-semibold text-md md:text-xl">
+        {skills.map((item, index) => (
+          <p
+            key={index}
+            className="px-3 text-center bg-black/90 text-valorantWhite"
+          >
+            {item}
+          </p>
+        ))}
       </div>
     </div>
   );
