@@ -1,13 +1,16 @@
+import { DINNextW1G } from "@/src/font/font";
+import clsx from "clsx";
 import React from "react";
 
 const Copyright = () => {
   return (
-    <p className="text-center text-sm sm:text-md md:text-lg">
+    <p
+      className={clsx(
+        DINNextW1G.className,
+        "text-center text-sm sm:text-md md:text-lg text-valorantBlack"
+      )}
+    >
       @2023 Ahmad Zaky Ubaidillah
-      {/* PORTFOLIO, AND ANY ASSOCIATED LOGOS ARE
-      TRADEMARKS, SERVISE
-      <br />
-      MARKS,AND/OR TRADEMARKS BY DEVELOPER */}
     </p>
   );
 };
