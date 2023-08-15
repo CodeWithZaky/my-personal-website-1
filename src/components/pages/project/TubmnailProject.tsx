@@ -28,11 +28,13 @@ const TubmnailComp = ({
         src={srcTumb}
         className="w-full h-full border border-slate-300/50"
       />
-      <h3 className="text-sm font-semibold">
+      <h3 className="text-sm font-semibold text-valorantBlack">
         {`${dateTumb} . `}
         <span className="text-valorant">{`${stackTumb}`}</span>
       </h3>
-      <p className="font-semibold text-md md:text-xl">{textTumb}</p>
+      <p className="font-semibold text-md md:text-xl text-valorantBlack">
+        {textTumb}
+      </p>
     </div>
   );
 };
