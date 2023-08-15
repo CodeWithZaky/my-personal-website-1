@@ -16,7 +16,7 @@ const Project = () => {
       <div className="flex w-full">
         <div className="w-full md:w-[80%] border-r border-t border-r-black/50 border-t-black/50 flex flex-col justify-end items-end">
           <div className="w-[10px] h-[10px] bg-valorant" />
-          <h1 className="z-10 text-5xl font-bold text-valorant md:-mb-0 lg:-mb-9 md:text-7xl lg:text-9xl">
+          <h1 className="z-10 font-bold text-7xl text-valorant sm:-mb-0 md:-mb-9 md:text-8xl lg:text-9xl">
             PROJECTS
           </h1>
           <div className="w-[90%] md:w-[80%] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 border-l border-black/50 gap-3">
