@@ -2,6 +2,7 @@ import logoz2 from "@/assets/logoz2.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { IoCloseSharp } from "react-icons/io5";
+import ToggleDarkMode from "./ToggleDarkMode";
 
 interface Props {
   toggleButton: () => void;
@@ -26,19 +27,18 @@ const Sidebar = ({ toggleButton, toggle }: Props) => {
       >
         <div className="w-full h-[90px] border-b border-b-white/5 flex justify-between items-center ">
           <Link href={"/"}>
-            <Image alt="image" src={logoz2} className="h-7 w-auto ml-10" />
+            <Image alt="image" src={logoz2} className="w-auto ml-10 h-7" />
           </Link>
           <IoCloseSharp
             onClick={toggleButton}
             className="mr-10 text-4xl text-valorantWhite"
           />
         </div>
-        <div className="flex flex-col justify-center items-center gap-20 font-bold font-mono text-xl text-valorantWhite ">
+        <div className="flex flex-col items-end justify-center gap-10 pt-10 pr-10 font-mono text-xl font-bold text-valorantWhite">
+          <ToggleDarkMode sty={"flex"} />
           <Link href={"/"}>HOME</Link>
           <Link href={"/about"}>ABOUT</Link>
-          <Link href={"/skill"}>SKILL</Link>
-          <Link href={"/project"}>PROJECT</Link>
-          <Link href={"/contact"}>CONTACT</Link>
+          <Link href={"/projects"}>PROJECTS</Link>
         </div>
       </div>
     </section>

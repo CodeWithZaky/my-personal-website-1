@@ -15,8 +15,9 @@ module.exports = {
       colors: {
         valorant: "#FF4655",
         valorantWhite: "#ECE8E1",
+        valorantBlack: "#111111",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
