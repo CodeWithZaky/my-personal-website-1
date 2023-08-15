@@ -4,12 +4,7 @@ import "../../node_modules/tailwindcss/tailwind.css";
 import Navbar from "../components/nav/Navbar";
 import Sidebar from "../components/nav/Sidebar";
 import clsx from "clsx";
-import { Heebo } from "next/font/google";
-
-const font = Heebo({
-  weight: "variable",
-  subsets: ["latin"],
-});
+import { TungsenBold } from "@/src/font/font";
 
 interface Props {
   children: React.ReactNode;
@@ -22,7 +17,7 @@ export default function RootLayout({ children }: Props) {
   };
 
   return (
-    <html lang="en" className={clsx(font.className)}>
+    <html lang="en" className={TungsenBold.className}>
       <body
         className={clsx(
           "__MANTAB__BRO__",

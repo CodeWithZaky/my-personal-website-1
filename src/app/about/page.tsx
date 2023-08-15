@@ -1,4 +1,6 @@
 import { me } from "@/src/components/pages/about/Me";
+import { DINNextW1G } from "@/src/font/font";
+import clsx from "clsx";
 import { Metadata } from "next/types";
 import { SiGithub, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
 
@@ -27,7 +29,12 @@ const skills: string[] = ["react js", "next js", "tailwind", "typescript"];
 
 const About = () => {
   return (
-    <div className="flex flex-col items-start justify-center w-[90%] md:w-[70%] m-auto h-full border-l border-l-gray-900 gap-7 py-10">
+    <div
+      className={clsx(
+        DINNextW1G.className,
+        "flex flex-col items-start justify-center w-[90%] md:w-[70%] m-auto h-full border-l border-l-gray-900 gap-7 py-10"
+      )}
+    >
       <p className="text-2xl font-bold md:text-3xl lg:text-4xl">ABOUT ME</p>
       <div className="flex flex-col gap-5 text-md md:text-xl font-semibold pr-5 md:pr-0 w-full md:w-[80%]">
         {me.map((item, index) => {

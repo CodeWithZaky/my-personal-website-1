@@ -2,6 +2,8 @@ import matrixcalc from "@/assets/matrix-calculations.png";
 import numbconv from "@/assets/number-convertion.png";
 import myportfolio from "@/assets/my-portfolio.png";
 import Image, { StaticImageData } from "next/image";
+import { DINNextW1G } from "@/src/font/font";
+import clsx from "clsx";
 
 const TubmnailComp = ({
   srcTumb,
@@ -15,7 +17,12 @@ const TubmnailComp = ({
   textTumb: string;
 }) => {
   return (
-    <div className="flex flex-col items-start justify-start w-full gap-2">
+    <div
+      className={clsx(
+        DINNextW1G.className,
+        "flex flex-col items-start justify-start w-full gap-2"
+      )}
+    >
       <Image
         alt="matrix calculations"
         src={srcTumb}
