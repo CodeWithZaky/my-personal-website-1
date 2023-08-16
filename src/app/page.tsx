@@ -26,7 +26,7 @@ const Home = () => {
             >
               welcome to my personal website
             </h3>
-            <h1 className="font-bold text-center text-7xl md:text-8xl text-valorantWhite tracking-[.4rem]">
+            <h1 className="font-bold text-center text-6xl md:text-8xl text-valorantWhite tracking-[.4rem]">
               {"I'M ZAKY"}
             </h1>
             <h1 className="text-4xl font-bold text-center md:text-5xl text-valorantWhite tracking-[.4rem]">
@@ -38,7 +38,7 @@ const Home = () => {
           <div className="w-[1px] h-[100%] bg-valorantWhite/50 absolute left-[300px] top-0" />
         </div>
       </div>
-      <div className="w-full bg-valorantWhite">
+      <div className="w-full">
         <div className="mx-auto w-[70%] flex flex-col border-l border-valorantBlack/50 pt-10 pb-20 gap-3">
           <div className="z-10 -mb-12 -ml-1 font-bold text-7xl md:text-9xl text-valorant">
             LATEST PROJECT
