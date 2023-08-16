@@ -2,18 +2,18 @@ import matrixcalc from "@/assets/matrix-calculations.png";
 import numbconv from "@/assets/number-convertion.png";
 import myportfolio from "@/assets/my-portfolio.png";
 import Image, { StaticImageData } from "next/image";
-import { DINNextW1G } from "@/src/font/font";
+import { DINNextW1G, TungsenBold } from "@/src/font/font";
 import clsx from "clsx";
 
 const TubmnailComp = ({
   srcTumb,
-  dateTumb,
+  title,
   stackTumb,
   textTumb,
 }: {
   srcTumb: StaticImageData;
-  dateTumb: string;
-  stackTumb: string;
+  title: string;
+  stackTumb: string[];
   textTumb: string;
 }) => {
   return (
@@ -26,13 +26,17 @@ const TubmnailComp = ({
       <Image
         alt="matrix calculations"
         src={srcTumb}
-        className="w-full h-full border border-slate-300/50"
+        className="w-full h-full mb-2 border border-valorantBlack/10"
       />
-      <h3 className="text-sm font-semibold text-valorantBlack">
-        {`${dateTumb} . `}
-        <span className="text-valorant">{`${stackTumb}`}</span>
+      <h1 className="text-xl font-bold text-valorantBlack">{title}</h1>
+      <h3 className="flex items-start justify-center gap-1 text-xs text-valorantWhite">
+        {stackTumb.map((item, index) => (
+          <div key={index} className="px-2 bg-valorantBlack">
+            {item}
+          </div>
+        ))}
       </h3>
-      <p className="font-semibold text-md md:text-xl text-valorantBlack">
+      <p className="font-bold leading-none text-md md:text-md text-valorantBlack/80">
         {textTumb}
       </p>
     </div>
@@ -42,27 +46,26 @@ const TubmnailComp = ({
 const matrixCalc = (
   <TubmnailComp
     srcTumb={matrixcalc}
-    dateTumb="12/12/12"
-    stackTumb="next js, tailwind, typescript"
-    textTumb="Lorem ipsum dolor sit amet consectetur adipisicing elit Quam laborum"
+    title="MATRIX CALCULATOR"
+    stackTumb={["REACT JS", "NEXT JS", "TAILWIND CSS"]}
+    textTumb="MATRIX CALCULATOR WEB APPLICATION DEVELOPED TO FULFILL UNIVERSITY ASSIGNMENTS"
   />
 );
 const numbConv = (
   <TubmnailComp
     srcTumb={numbconv}
-    dateTumb="12/12/12"
-    stackTumb="next js, tailwind, typescript"
-    textTumb="Lorem ipsum dolor sit amet consectetur adipisicing elit Quam laborum"
+    title="NUMBER CONVERTION"
+    stackTumb={["REACT JS", "NEXT JS", "TAILWIND CSS"]}
+    textTumb="NUMBER CONVERTION WEB APPLICATION DEVELOPED TO FULFILL A UNIVERSITY ASSIGNMENT"
   />
 );
 const myPortfolio = (
   <TubmnailComp
     srcTumb={myportfolio}
-    dateTumb="12/12/12"
-    stackTumb="next js, tailwind, typescript"
-    textTumb="Lorem ipsum dolor sit amet consectetur adipisicing elit Quam laborum"
+    title="MY PORTFOLIO"
+    stackTumb={["NEXT JS", "TAILWIND CSS", "DAISYUI"]}
+    textTumb="PERSONAL WEBSITE FOR INFORMATION ABOUT ME, ESPECIALLY IN THE FIELD OF TECHNOLOGY"
   />
 );
 
-const TubmnailArray = [matrixCalc, numbConv, myPortfolio];
-export { TubmnailArray };
+export const TubmnailArray = [matrixCalc, numbConv, myPortfolio];
