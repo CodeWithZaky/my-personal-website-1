@@ -39,7 +39,7 @@ const Home = () => {
         </div>
       </div>
       <div className="w-full bg-valorantWhite">
-        <div className="mx-auto w-[70%] flex flex-col border-l border-gray-500 pt-10 pb-20 gap-3">
+        <div className="mx-auto w-[70%] flex flex-col border-l border-valorantBlack/50 pt-10 pb-20 gap-3">
           <div className="z-10 -mb-12 -ml-1 font-bold text-7xl md:text-9xl text-valorant">
             LATEST PROJECT
           </div>
