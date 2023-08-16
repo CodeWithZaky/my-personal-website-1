@@ -16,6 +16,7 @@ module.exports = {
         valorant: "#FF4655",
         valorantWhite: "#ECE8E1",
         valorantBlack: "#111111",
+        valorantBlue: "#0F1923",
       },
     },
   },
