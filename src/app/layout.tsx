@@ -18,6 +18,12 @@ export default function RootLayout({ children }: Props) {
 
   return (
     <html lang="en" className={TungsenBold.className}>
+      <head>
+        <meta
+          name="description"
+          content="Hi, I'm a frontend web developer based in Indonesia."
+        />
+      </head>
       <body
         className={clsx(
           "__MANTAB__BRO__",
