@@ -6,7 +6,7 @@ const LearnMoreButton = () => {
       <div className="absolute top-0 w-full border-t border-l border-r h-[40%] border-valorantWhite"></div>
       <Link
         href={"/about"}
-        className="z-10 px-2 text-2xl font-semibold text-center text-valorantWhite bg-valorant md:px-10 md:py-2"
+        className="z-10 px-2 text-2xl font-semibold text-center text-valorantWhite bg-valorant hover:bg-valorantBlue md:px-10 md:py-2"
       >
         MORE ABOUT ME
       </Link>

@@ -38,7 +38,7 @@ const socialIcons: { icon: React.ReactNode; url: string }[] = [
 
 const ContactPage = () => {
   return (
-    <div className="flex flex-col items-end justify-center w-[70%] m-auto border-t border-r border-valorantBlack py-20 gap-5">
+    <div className="flex flex-col items-end justify-center w-[70%] m-auto border-t border-r border-valorantBlack/50 py-20 gap-5">
       <div className="text-2xl font-semibold text-center sm:text-3xl md:text-5xl text-valorantBlack">
         REACH ME OUT
       </div>
@@ -48,7 +48,7 @@ const ContactPage = () => {
             <div
               key={index}
               className={clsx(
-                "p-3 border border-valorantBlack hover:bg-valorantBlack/5 rounded-xl md:rounded-2xl"
+                "p-3 border border-valorantBlack hover:bg-valorantBlack/5 rounded-xl md:rounded-3xl"
               )}
             >
               {contact.icon}
