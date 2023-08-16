@@ -1,4 +1,4 @@
-import logoz2 from "@/assets/logoz2.svg";
+import newLogoZ from "@/assets/newLogoZ.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { IoCloseSharp } from "react-icons/io5";
@@ -13,7 +13,9 @@ const Sidebar = ({ toggleButton, toggle }: Props) => {
   return (
     <section
       className={
-        toggle ? "flex w-full h-full absolute top-0 right-0 z-20" : "hidden"
+        toggle
+          ? "flex w-full h-full absolute top-0 right-0 z-20 md:hidden"
+          : "hidden"
       }
     >
       <div
@@ -27,7 +29,7 @@ const Sidebar = ({ toggleButton, toggle }: Props) => {
       >
         <div className="w-full h-[90px] border-b border-b-white/5 flex justify-between items-center ">
           <Link href={"/"}>
-            <Image alt="image" src={logoz2} className="w-auto ml-10 h-7" />
+            <Image alt="image" src={newLogoZ} className="w-auto h-6 ml-10" />
           </Link>
           <IoCloseSharp
             onClick={toggleButton}
@@ -35,7 +37,7 @@ const Sidebar = ({ toggleButton, toggle }: Props) => {
           />
         </div>
         <div className="flex flex-col items-end justify-center gap-10 pt-10 pr-10 font-mono text-xl font-bold text-valorantWhite">
-          <ToggleDarkMode sty={"flex"} />
+          <ToggleDarkMode sty={"flex mr-3"} />
           <Link href={"/"}>HOME</Link>
           <Link href={"/about"}>ABOUT</Link>
           <Link href={"/projects"}>PROJECTS</Link>

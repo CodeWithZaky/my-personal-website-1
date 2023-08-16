@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import logoz2 from "@/assets/logoz2.svg";
+import newLogoZ from "@/assets/newLogoZ.svg";
 import Hamburger from "./Hamburger";
 import ToggleDarkMode from "./ToggleDarkMode";
 
@@ -16,8 +16,8 @@ const MainNavbar = ({ toggleButton }: Props) => {
         <Link href={"/"}>
           <Image
             alt="image"
-            src={logoz2}
-            className="w-auto ml-10 h-7 md:ml-0"
+            src={newLogoZ}
+            className="w-auto h-6 ml-10 md:ml-0"
           />
         </Link>
         <div className="items-center justify-center hidden gap-10 font-mono text-xl font-bold md:flex text-valorantWhite">
