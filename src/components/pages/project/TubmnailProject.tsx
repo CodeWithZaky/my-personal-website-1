@@ -29,7 +29,7 @@ const TubmnailComp = ({
         className="w-full h-full mb-2 border border-valorantBlack/10"
       />
       <p className="text-xl font-bold text-valorantBlack">{title}</p>
-      <div className="flex items-start justify-center gap-1 text-xs text-valorantWhite">
+      <div className="flex flex-wrap items-start justify-start gap-1 text-xs text-valorantWhite">
         {stackTumb.map((item, index) => (
           <p key={index} className="px-2 bg-valorantBlack">
             {item}
