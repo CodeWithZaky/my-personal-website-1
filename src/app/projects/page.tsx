@@ -1,5 +1,5 @@
 import { Metadata } from "next/types";
-import { TubmnailArray } from "@/src/components/pages/project/TubmnailProject";
+import { TubmnailArray } from "@/src/components/pages/projects/TubmnailProject";
 import clsx from "clsx";
 
 export const metadata: Metadata = {
