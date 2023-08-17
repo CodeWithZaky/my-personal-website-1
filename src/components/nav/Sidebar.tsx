@@ -2,7 +2,6 @@ import newLogoZ from "@/assets/newLogoZ.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { IoCloseSharp } from "react-icons/io5";
-import ToggleDarkMode from "./ToggleDarkMode";
 
 interface Props {
   toggleButton: () => void;
@@ -37,7 +36,6 @@ const Sidebar = ({ toggleButton, toggle }: Props) => {
           />
         </div>
         <div className="flex flex-col items-end justify-center gap-10 pt-10 pr-10 font-mono text-xl font-bold text-valorantWhite">
-          <ToggleDarkMode sty={"flex mr-3"} />
           <Link href={"/"}>HOME</Link>
           <Link href={"/about"}>ABOUT</Link>
           <Link href={"/projects"}>PROJECTS</Link>
