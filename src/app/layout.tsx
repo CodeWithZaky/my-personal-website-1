@@ -6,18 +6,18 @@ import Sidebar from "../components/nav/Sidebar";
 import clsx from "clsx";
 import { TungsenBold } from "@/src/font/font";
 
-interface Props {
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode;
-}
-
-export default function RootLayout({ children }: Props) {
+}) {
   const [toggle, setToggle] = useState(false);
   const toggleButton = () => {
     setToggle(!toggle);
   };
 
   return (
-    <html lang="en" className={TungsenBold.className}>
+    <html lang="en" className={clsx(TungsenBold.className, "scroll-smooth")}>
       <head>
         <meta
           name="description"
@@ -27,17 +27,15 @@ export default function RootLayout({ children }: Props) {
       <body
         className={clsx(
           "__MANTAB__BRO__",
-          "bg-valorantWhite",
-          toggle ? "overflow-hidden" : "evervlow-auto"
+          toggle ? "overflow-hidden" : "evervlow-auto",
+          "bg-valorantWhite w-full min-h-screen container-none"
         )}
       >
-        <main className="w-full min-h-screen container-none">
-          <>
-            <Navbar toggleButton={toggleButton} />
-            <Sidebar toggleButton={toggleButton} toggle={toggle} />
-          </>
-          {children}
-        </main>
+        <>
+          <Navbar toggleButton={toggleButton} />
+          <Sidebar toggleButton={toggleButton} toggle={toggle} />
+        </>
+        {children}
       </body>
     </html>
   );
