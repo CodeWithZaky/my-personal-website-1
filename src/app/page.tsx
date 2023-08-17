@@ -8,6 +8,7 @@ import Contacts from "../components/pages/contacts/ContactPage";
 
 export const metadata: Metadata = {
   title: "Home - Portfolio",
+  description: "This is the home page and I wish you all the best",
 };
 
 const Home = () => {
@@ -39,11 +40,11 @@ const Home = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="mx-auto w-[70%] flex flex-col border-l border-valorantBlack/50 pt-10 pb-20 gap-3">
-          <div className="z-10 -mb-12 -ml-1 font-bold text-7xl md:text-9xl text-valorant">
+        <div className="group mx-auto w-[70%] flex flex-col border-l border-valorantBlack/50 pt-10 pb-20 gap-3">
+          <div className="z-10 -mb-12 -ml-1 font-bold transition-all group-hover:-mb-5 text-7xl md:text-9xl text-valorant">
             LATEST PROJECT
           </div>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-1 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-5 transition-all md:grid-cols-1 lg:grid-cols-3">
             {TubmnailArray.map((item, index) => {
               return <div key={index.toString()}>{item}</div>;
             })}

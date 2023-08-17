@@ -6,14 +6,15 @@ import { SiGithub, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
 
 export const metadata: Metadata = {
   title: "About - Portfolio",
+  description: "This is the about page and I wish you all the best",
 };
 const socialIcons: { icon: React.ReactNode; url: string }[] = [
   {
-    icon: <SiGithub />,
+    icon: <SiLinkedin />,
     url: "./",
   },
   {
-    icon: <SiLinkedin />,
+    icon: <SiGithub />,
     url: "./",
   },
   {
@@ -27,12 +28,12 @@ const socialIcons: { icon: React.ReactNode; url: string }[] = [
 ];
 const skills: string[] = ["react js", "next js", "tailwind", "typescript"];
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div
       className={clsx(
         DINNextW1G.className,
-        "flex flex-col items-start justify-center w-[90%] md:w-[70%] m-auto h-full border-l border-l-gray-500 gap-5 pt-10 py-20"
+        "flex flex-col items-start justify-center w-[90%] md:w-[70%] m-auto h-full border-l border-l-valorantBlack/50 gap-5 pt-10 py-20"
       )}
     >
       <p
@@ -48,7 +49,7 @@ const About = () => {
           return <p key={index}>{item}</p>;
         })}
       </div>
-      <div className="inline-flex flex-wrap gap-1 font-semibold text-md md:text-xl">
+      <div className="inline-flex flex-wrap gap-2 font-semibold text-md md:text-xl">
         {skills.map((item, index) => (
           <p
             key={index}
@@ -62,19 +63,16 @@ const About = () => {
         ))}
       </div>
       <div className="flex flex-wrap gap-5 text-[#111111]">
-        {socialIcons
-          .slice(0)
-          .reverse()
-          .map((item, index) => {
-            return (
-              <p key={index} className="text-4xl">
-                {item.icon}
-              </p>
-            );
-          })}
+        {socialIcons.map((item, index) => {
+          return (
+            <p key={index} className="text-4xl cursor-pointer">
+              {item.icon}
+            </p>
+          );
+        })}
       </div>
     </div>
   );
 };
 
-export default About;
+export default AboutPage;
