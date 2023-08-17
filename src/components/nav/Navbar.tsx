@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import newLogoZ from "@/assets/newLogoZ.svg";
 import Hamburger from "./Hamburger";
-import ToggleDarkMode from "./ToggleDarkMode";
 
 interface Props {
   toggleButton: () => void;
@@ -25,7 +24,6 @@ const MainNavbar = ({ toggleButton }: Props) => {
           <Link href={"/about"}>ABOUT</Link>
           <Link href={"/projects"}>PROJECTS</Link>
         </div>
-        <ToggleDarkMode sty={"hidden md:flex"} />
         <Hamburger toggleButton={toggleButton} />
       </section>
     </>
