@@ -1,4 +1,4 @@
-import { about_me } from "@/src/components/pages/about/aboutMe";
+import { me } from "@/src/components/pages/about/Me";
 import { DINNextW1G, TungsenBold } from "@/src/font/font";
 import clsx from "clsx";
 import { Metadata } from "next/types";
@@ -44,7 +44,7 @@ const About = () => {
         ABOUT ME
       </p>
       <div className="flex flex-col gap-3 text-md md:text-xl font-semibold pr-5 md:pr-0 w-full md:w-[80%] text-[#111111] my-2">
-        {about_me.map((item, index) => {
+        {me.map((item, index) => {
           return <p key={index}>{item}</p>;
         })}
       </div>
