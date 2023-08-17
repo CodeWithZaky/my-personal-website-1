@@ -6,7 +6,7 @@ import {
   SiFacebook,
   SiYoutube,
 } from "react-icons/si";
-import Copyright from "@/src/components/pages/contact/Copyright";
+import Copyright from "@/src/components/pages/contacts/Copyright";
 import clsx from "clsx";
 
 const socialIcons: { icon: React.ReactNode; url: string }[] = [
@@ -48,7 +48,7 @@ const ContactPage = () => {
             <div
               key={index}
               className={clsx(
-                "p-3 border border-valorantBlack hover:bg-valorantBlack/5 rounded-xl md:rounded-3xl"
+                "p-3 border border-valorantBlack rounded-xl hover:rounded-sm transition-all md:rounded-3xl cursor-pointer"
               )}
             >
               {contact.icon}
