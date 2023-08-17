@@ -12,4 +12,4 @@ const DINNextW1G = localFont({
   });
   
 
-  export {TungsenBold,DINNextW1G}
+export {TungsenBold,DINNextW1G}
