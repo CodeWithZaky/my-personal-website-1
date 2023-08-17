@@ -1,10 +1,10 @@
 import LearnMoreButton from "@/components/pages/home/LearnMoreButton";
 import { TriangleHome } from "@/components/ornaments/Triangle";
 import { Metadata } from "next/types";
-import { TubmnailArray } from "@/src/components/pages/projects/TubmnailProject";
+import { TubmnailArray } from "@/src/components/pages/project/TubmnailProject";
 import { DINNextW1G } from "../font/font";
 import clsx from "clsx";
-import Contacts from "../components/pages/contacts/ContactPage";
+import Contacts from "../components/pages/contact/Contacts";
 
 export const metadata: Metadata = {
   title: "Home - Portfolio",
