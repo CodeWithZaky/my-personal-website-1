@@ -1,7 +1,7 @@
 <h1 align="center"><b>Hi , I'm Zaky</b><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35" />
 <h1 align="center"><img src="https://readme-typing-svg.herokuapp.com?font=Time+New+Roman&color=179c3f&size=33&center=true&vCenter=true&width=800&height=50&lines=Front-End+Developer,;Active+Learner/Researcher,;likes+to+explore+new+things..."/></h1>
 
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"><b> Github Stats </b>
+<!-- ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"><b> Github Stats </b> -->
 <div align="center">
 <a href="https://github.com/zakyscripters/">
   
