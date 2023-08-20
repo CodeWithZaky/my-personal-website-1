@@ -1,40 +1,6 @@
-import {
-  SiGithub,
-  SiInstagram,
-  SiLinkedin,
-  SiGmail,
-  SiFacebook,
-  SiYoutube,
-} from "react-icons/si";
 import Copyright from "@/src/components/pages/contacts/Copyright";
 import clsx from "clsx";
-
-const socialIcons: { icon: React.ReactNode; url: string }[] = [
-  {
-    icon: <SiLinkedin />,
-    url: "./",
-  },
-  {
-    icon: <SiInstagram />,
-    url: "./",
-  },
-  {
-    icon: <SiYoutube />,
-    url: "./",
-  },
-  {
-    icon: <SiGmail />,
-    url: "./",
-  },
-  {
-    icon: <SiFacebook />,
-    url: "./",
-  },
-  {
-    icon: <SiGithub />,
-    url: "./",
-  },
-];
+import { socialIcons } from "./Social-Icons";
 
 const ContactPage = () => {
   return (
@@ -42,17 +8,19 @@ const ContactPage = () => {
       <div className="text-2xl font-semibold text-center sm:text-3xl md:text-5xl text-valorantBlack">
         REACH ME OUT
       </div>
-      <div className="flex flex-row flex-wrap items-center justify-end gap-1 text-2xl sm:text-3xl md:text-4xl text-valorantBlack">
-        {socialIcons.map((contact, index) => {
+      <div className="flex flex-row flex-wrap items-center justify-end gap-3 text-2xl sm:text-3xl md:text-4xl text-valorantBlack">
+        {socialIcons.map((item, index) => {
           return (
-            <div
+            <a
+              href={item.url}
+              target="_blank"
               key={index}
               className={clsx(
                 "p-3 border border-valorantBlack rounded-xl md:rounded-3xl hover:rounded-sm transition-all cursor-pointer"
               )}
             >
-              {contact.icon}
-            </div>
+              {item.icon}
+            </a>
           );
         })}
       </div>
