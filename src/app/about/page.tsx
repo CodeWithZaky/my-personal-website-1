@@ -1,32 +1,13 @@
-import { about_me } from "@/src/components/pages/about/AboutMe";
+import { about_me, skills } from "@/src/components/pages/about/About-Me";
 import { DINNextW1G, TungsenBold } from "@/src/font/font";
 import clsx from "clsx";
 import { Metadata } from "next/types";
-import { SiGithub, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
+import { socialIcons } from "@/src/components/pages/contacts/Social-Icons";
 
 export const metadata: Metadata = {
   title: "About - Portfolio",
   description: "This is the about page and I wish you all the best",
 };
-const socialIcons: { icon: React.ReactNode; url: string }[] = [
-  {
-    icon: <SiLinkedin />,
-    url: "./",
-  },
-  {
-    icon: <SiGithub />,
-    url: "./",
-  },
-  {
-    icon: <SiInstagram />,
-    url: "./",
-  },
-  {
-    icon: <SiYoutube />,
-    url: "./",
-  },
-];
-const skills: string[] = ["react js", "next js", "tailwind", "typescript"];
 
 const AboutPage = () => {
   return (
@@ -62,12 +43,17 @@ const AboutPage = () => {
           </p>
         ))}
       </div>
-      <div className="flex flex-wrap gap-5 text-[#111111]">
+      <div className="flex flex-wrap gap-5">
         {socialIcons.map((item, index) => {
           return (
-            <p key={index} className="text-4xl cursor-pointer">
+            <a
+              href={item.url}
+              target="_blank"
+              key={index}
+              className="text-4xl cursor-pointer text-valorantBlack hover:text-valorantBlack/90"
+            >
               {item.icon}
-            </p>
+            </a>
           );
         })}
       </div>

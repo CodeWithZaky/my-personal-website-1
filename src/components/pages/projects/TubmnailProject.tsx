@@ -10,17 +10,21 @@ const TubmnailComp = ({
   title,
   stackTumb,
   textTumb,
+  linkHref,
 }: {
   srcTumb: StaticImageData;
   title: string;
   stackTumb: string[];
   textTumb: string;
+  linkHref: string;
 }) => {
   return (
-    <div
+    <a
+      href={`${linkHref}`}
+      target="_blank"
       className={clsx(
         DINNextW1G.className,
-        "flex flex-col items-start justify-start w-full gap-2"
+        "flex flex-col items-start justify-start w-full gap-2 cursor-pointer"
       )}
     >
       <Image
@@ -28,7 +32,9 @@ const TubmnailComp = ({
         src={srcTumb}
         className="w-full h-full mb-2 border border-valorantBlack/10"
       />
-      <h1 className="text-xl font-bold text-valorantBlack">{title}</h1>
+      <h1 className="text-xl font-bold text-valorantBlack hover:underline">
+        {title}
+      </h1>
       <div className="flex flex-wrap items-start justify-start gap-1 text-xs text-valorantWhite">
         {stackTumb.map((item, index) => (
           <p key={index} className="px-2 bg-valorantBlack">
@@ -36,15 +42,16 @@ const TubmnailComp = ({
           </p>
         ))}
       </div>
-      <p className="font-bold leading-none text-md md:text-md text-valorantBlack/80">
+      <p className="font-bold leading-none text-md md:text-md text-valorantBlack/80 hover:text-valorantBlack">
         {textTumb}
       </p>
-    </div>
+    </a>
   );
 };
 
 const matrixCalc = (
   <TubmnailComp
+    linkHref="https://matrix-calc.vercel.app"
     srcTumb={matrixcalc}
     title="MATRIX CALCULATOR"
     stackTumb={["REACT JS", "NEXT JS", "TAILWIND CSS"]}
@@ -53,6 +60,7 @@ const matrixCalc = (
 );
 const numbConv = (
   <TubmnailComp
+    linkHref="https://numconv.vercel.app"
     srcTumb={numbconv}
     title="NUMBER CONVERTION"
     stackTumb={["REACT JS", "NEXT JS", "TAILWIND CSS"]}
@@ -61,9 +69,10 @@ const numbConv = (
 );
 const myPortfolio = (
   <TubmnailComp
+    linkHref="https://azaku.vercel.app"
     srcTumb={myportfolio}
     title="MY PORTFOLIO"
-    stackTumb={["NEXT JS", "TAILWIND CSS", "DAISYUI"]}
+    stackTumb={["NEXT JS", "TAILWIND CSS", "TYPESCRIPT"]}
     textTumb="PERSONAL WEBSITE FOR INFORMATION ABOUT ME, ESPECIALLY IN THE FIELD OF TECHNOLOGY"
   />
 );
