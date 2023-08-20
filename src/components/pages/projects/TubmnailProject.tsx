@@ -63,7 +63,7 @@ const numbConv = (
     linkHref="https://numconv.vercel.app"
     srcTumb={numbconv}
     title="NUMBER CONVERTION"
-    stackTumb={["REACT JS", "NEXT JS", "TAILWIND CSS"]}
+    stackTumb={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
     textTumb="NUMBER CONVERTION WEB APPLICATION DEVELOPED TO FULFILL A UNIVERSITY ASSIGNMENT"
   />
 );
