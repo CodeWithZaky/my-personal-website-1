@@ -54,7 +54,7 @@ const matrixCalc = (
     linkHref="https://matrix-calc.vercel.app"
     srcTumb={matrixcalc}
     title="MATRIX CALCULATOR"
-    stackTumb={["REACT JS", "NEXT JS", "TAILWIND CSS"]}
+    stackTumb={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
     textTumb="MATRIX CALCULATOR WEB APPLICATION DEVELOPED TO FULFILL UNIVERSITY ASSIGNMENTS"
   />
 );
