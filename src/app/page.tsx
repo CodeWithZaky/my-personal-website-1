@@ -45,7 +45,7 @@ const Home = () => {
             LATEST PROJECT
           </div>
           <div className="grid grid-cols-1 gap-5 transition-all md:grid-cols-1 lg:grid-cols-3">
-            {TubmnailArray.map((item, index) => {
+            {TubmnailArray.slice(0, 3).map((item, index) => {
               return <div key={index.toString()}>{item}</div>;
             })}
           </div>
