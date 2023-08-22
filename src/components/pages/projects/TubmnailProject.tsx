@@ -1,8 +1,8 @@
-import matrixcalc from "@/assets/tumbnail-project/matrix-calculations.png";
-import numbconv from "@/assets/tumbnail-project/number-convertion.png";
-import myportfolio from "@/assets/tumbnail-project/my-portfolio.png";
+import matrixcalc from "@/assets/images/tumbnail-project/matrix-calculations.png";
+import numbconv from "@/assets/images/tumbnail-project/number-convertion.png";
+import myportfolio from "@/assets/images/tumbnail-project/my-portfolio.png";
 import Image, { StaticImageData } from "next/image";
-import { DINNextW1G } from "@/src/font/font";
+import { DINNextW1G } from "@/assets/fonts/font";
 import clsx from "clsx";
 
 const TubmnailComp = ({
@@ -72,7 +72,7 @@ const myPortfolio = (
     linkHref="https://azaku.vercel.app"
     srcTumb={myportfolio}
     title="MY PORTFOLIO"
-    stackTumb={["NEXT JS", "TAILWIND CSS", "TYPESCRIPT"]}
+    stackTumb={["NEXT JS", "TAILWIND CSS", "TYPESCRIPT", "CLSX"]}
     textTumb="PERSONAL WEBSITE FOR INFORMATION ABOUT ME, ESPECIALLY IN THE FIELD OF TECHNOLOGY"
   />
 );
