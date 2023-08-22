@@ -1,10 +1,10 @@
 import LearnMoreButton from "@/components/pages/home/LearnMoreButton";
 import { TriangleHome } from "@/components/ornaments/Triangle";
 import { Metadata } from "next/types";
-import { TubmnailArray } from "@/src/components/pages/projects/TubmnailProject";
-import { DINNextW1G } from "../font/font";
+import { DINNextW1G } from "@/assets/fonts/font";
 import clsx from "clsx";
-import Contacts from "../components/pages/contacts/ContactPage";
+import Contacts from "@/components/pages/contacts/ContactPage";
+import LatestProject from "@/components/pages/home/LatestProject";
 
 export const metadata: Metadata = {
   title: "Home - Portfolio",
@@ -39,18 +39,7 @@ const Home = () => {
           <div className="w-[1px] h-[100%] bg-valorantWhite/50 absolute left-[300px] top-0" />
         </div>
       </div>
-      <div className="w-full">
-        <div className="group mx-auto w-[70%] flex flex-col border-l border-valorantBlack/50 pt-10 pb-20 gap-3">
-          <div className="z-10 -mb-12 -ml-1 font-bold transition-all group-hover:-mb-5 text-7xl md:text-9xl text-valorant">
-            LATEST PROJECT
-          </div>
-          <div className="grid grid-cols-1 gap-5 transition-all md:grid-cols-1 lg:grid-cols-3">
-            {TubmnailArray.slice(0, 3).map((item, index) => {
-              return <div key={index.toString()}>{item}</div>;
-            })}
-          </div>
-        </div>
-      </div>
+      <LatestProject />
       <Contacts />
     </section>
   );
