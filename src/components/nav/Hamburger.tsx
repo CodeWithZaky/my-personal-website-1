@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hamburger = ({ toggleButton }: { toggleButton: () => void }) => {
   return (
     <div

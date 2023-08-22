@@ -1,4 +1,4 @@
-import Copyright from "@/src/components/pages/contacts/Copyright";
+import Copyright from "@/components/pages/contacts/Copyright";
 import clsx from "clsx";
 import { socialIcons } from "./Social-Icons";
 

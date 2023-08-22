@@ -1,4 +1,4 @@
-import newLogoZ from "@/assets/newLogoZ.svg";
+import newLogoZ from "@/assets/images/newLogoZ.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { IoCloseSharp } from "react-icons/io5";

@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import "../../node_modules/tailwindcss/tailwind.css";
-import Navbar from "../components/nav/Navbar";
-import Sidebar from "../components/nav/Sidebar";
+import "/node_modules/tailwindcss/tailwind.css";
+import Navbar from "@/components/nav/Navbar";
+import Sidebar from "@/components/nav/Sidebar";
 import clsx from "clsx";
-import { TungsenBold } from "@/src/font/font";
+import { TungsenBold } from "@/assets/fonts/font";
 
 export default function RootLayout({
   children,
