@@ -1,6 +1,6 @@
-import matrixcalc from "@/assets/images/tumbnail-project/matrix-calculations.png";
-import numbconv from "@/assets/images/tumbnail-project/number-convertion.png";
-import myportfolio from "@/assets/images/tumbnail-project/my-portfolio.png";
+import matrixcalc from "@/assets/images/tumbnail-project/matrix-calculator-2.png";
+import numbconv from "@/assets/images/tumbnail-project/number-convertion-2.png";
+import myportfolio from "@/assets/images/tumbnail-project/my-portfolio-2.png";
 import Image, { StaticImageData } from "next/image";
 import { DINNextW1G } from "@/assets/fonts/font";
 import clsx from "clsx";
