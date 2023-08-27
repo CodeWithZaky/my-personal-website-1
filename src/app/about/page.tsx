@@ -1,9 +1,9 @@
-import { about_me } from "@/components/pages/about/About-Me";
-import { skills } from "@/components/pages/about/Skilll-Items";
+import { about_me } from "@/src/components/templates/About-Me";
+import { skill_items } from "@/src/components/templates/Skilll-Items";
 import { DINNextW1G, TungsenBold } from "@/assets/fonts/font";
 import clsx from "clsx";
 import { Metadata } from "next/types";
-import { socialIcons } from "@/components/pages/contacts/Social-Icons";
+import { social_icons } from "@/src/components/templates/Social-Icons";
 
 export const metadata: Metadata = {
   title: "About - Portfolio",
@@ -32,7 +32,7 @@ const AboutPage = () => {
         })}
       </div>
       <div className="inline-flex flex-wrap gap-2 font-semibold text-md md:text-xl">
-        {skills.map((item, index) => (
+        {skill_items.map((item, index) => (
           <p
             key={index}
             className={clsx(
@@ -45,7 +45,7 @@ const AboutPage = () => {
         ))}
       </div>
       <div className="flex flex-wrap gap-5">
-        {socialIcons.map((item, index) => {
+        {social_icons.map((item, index) => {
           return (
             <a
               href={item.url}

@@ -1,5 +1,5 @@
 import { Metadata } from "next/types";
-import { TubmnailArray } from "@/src/components/pages/projects/TubmnailProject";
+import { thumbnail_projects } from "@/src/components/templates/Tubmnail-Projects";
 import clsx from "clsx";
 
 export const metadata: Metadata = {
@@ -21,10 +21,10 @@ const ProjectsPage = () => {
             PROJECTS
           </h1>
           <div className="w-[90%] md:w-[80%] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 border-l border-valorantBlack/50 gap-3">
-            {TubmnailArray.map((item, index) => {
+            {thumbnail_projects.map((item, index) => {
               return (
                 <div
-                  key={index.toString()}
+                  key={index}
                   className={clsx(
                     // index == 0
                     //   ? "border-r border-b"

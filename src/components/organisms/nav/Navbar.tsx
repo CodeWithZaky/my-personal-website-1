@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import newLogoZ from "@/assets/images/newLogoZ.svg";
-import Hamburger from "./Hamburger";
+import Hamburger from "../../atoms/buttons/Hamburger";
 
 interface Props {
   toggleButton: () => void;

@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import "/node_modules/tailwindcss/tailwind.css";
-import Navbar from "@/components/nav/Navbar";
-import Sidebar from "@/components/nav/Sidebar";
+import Navbar from "@/src/components/organisms/nav/Navbar";
+import Sidebar from "@/src/components/organisms/nav/Sidebar";
 import clsx from "clsx";
 import { TungsenBold } from "@/assets/fonts/font";
 

@@ -1,4 +1,4 @@
-import { TubmnailArray } from "@/components/pages/projects/TubmnailProject";
+import { thumbnail_projects } from "@/src/components/templates/Tubmnail-Projects";
 
 const LatestProject = () => {
   return (
@@ -8,7 +8,7 @@ const LatestProject = () => {
           LATEST PROJECT
         </div>
         <div className="grid grid-cols-1 gap-5 transition-all md:grid-cols-1 lg:grid-cols-3">
-          {TubmnailArray.slice(0, 3).map((item, index) => {
+          {thumbnail_projects.slice(0, 3).map((item, index) => {
             return <div key={index.toString()}>{item}</div>;
           })}
         </div>
