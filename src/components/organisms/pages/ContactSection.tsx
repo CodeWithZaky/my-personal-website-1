@@ -1,15 +1,15 @@
-import Copyright from "@/components/pages/contacts/Copyright";
+import Copyright from "@/components/molecules/Copyright";
 import clsx from "clsx";
-import { socialIcons } from "./Social-Icons";
+import { social_icons } from "../../templates/Social-Icons";
 
-const ContactPage = () => {
+const ContactSection = () => {
   return (
     <div className="flex flex-col items-end justify-center w-[70%] m-auto border-t border-r border-valorantBlack/50 py-20 gap-5">
       <div className="text-2xl font-semibold text-center sm:text-3xl md:text-5xl text-valorantBlack">
         REACH ME OUT
       </div>
       <div className="flex flex-row flex-wrap items-center justify-end gap-3 text-2xl sm:text-3xl md:text-4xl text-valorantBlack">
-        {socialIcons.map((item, index) => {
+        {social_icons.map((item, index) => {
           return (
             <a
               href={item.url}
@@ -29,4 +29,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactSection;
