@@ -2,7 +2,7 @@
 import clsx from "clsx";
 
 const SkeletonAboutMe = () => {
-  const skeletonItems = new Array(3).fill(null); // Adjust the number of skeleton items
+  const skeletonItems = new Array(3).fill(null);
 
   return (
     <div

@@ -2,7 +2,7 @@
 import clsx from "clsx";
 
 const SkeletonThumbnail = () => {
-  const skeletonThumbnails = new Array(6).fill(null); // Adjust the number of skeleton thumbnails
+  const skeletonThumbnails = new Array(6).fill(null);
 
   return (
     <div className="w-full min-h-screen">
