@@ -4,7 +4,7 @@ import "/node_modules/tailwindcss/tailwind.css";
 import Navbar from "@/src/components/organisms/nav/Navbar";
 import Sidebar from "@/src/components/organisms/nav/Sidebar";
 import clsx from "clsx";
-import { TungsenBold } from "@/assets/fonts/font";
+import { TungstenBold } from "@/assets/fonts/font";
 
 export default function RootLayout({
   children,
@@ -17,7 +17,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={clsx(TungsenBold.className, "scroll-smooth")}>
+    <html lang="en" className={clsx(TungstenBold.className, "scroll-smooth")}>
       <head>
         <meta
           name="description"

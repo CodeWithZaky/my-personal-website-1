@@ -1,15 +1,7 @@
 import localFont from "next/font/local";
 
-const TungsenBold = localFont({
-  src: "./font-face/Tungsen-Bold.woff2",
-  display: "swap",
-});
-const TungstenBold2 = localFont({
-  src: "./font-face/Tungsten-Bold2.woff2",
-  display: "swap",
-});
-const TungstenBold3 = localFont({
-  src: "./font-face/Tungsten-Bold4.ttf",
+const TungstenBold = localFont({
+  src: "./font-face/Tungsten-Bold.ttf",
   display: "swap",
 });
 
@@ -18,4 +10,4 @@ const DINNextW1G = localFont({
   display: "swap",
 });
 
-export { TungsenBold, DINNextW1G, TungstenBold2, TungstenBold3 };
+export { TungstenBold, DINNextW1G };

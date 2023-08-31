@@ -1,6 +1,6 @@
 import { about_me } from "@/src/components/atoms/items/About-Me";
 import { skill_items } from "@/src/components/atoms/items/Skilll-Items";
-import { DINNextW1G, TungsenBold } from "@/assets/fonts/font";
+import { DINNextW1G, TungstenBold } from "@/assets/fonts/font";
 import clsx from "clsx";
 import { Metadata } from "next/types";
 import { social_icons } from "@/src/components/atoms/items/Social-Icons";
@@ -20,7 +20,7 @@ const AboutPage = () => {
     >
       <p
         className={clsx(
-          TungsenBold.className,
+          TungstenBold.className,
           "text-2xl font-bold md:text-3xl lg:text-4xl text-[#111111]"
         )}
       >
@@ -36,7 +36,7 @@ const AboutPage = () => {
           <p
             key={index}
             className={clsx(
-              TungsenBold.className,
+              TungstenBold.className,
               "px-3 text-center bg-[#111111] text-valorantWhite tracking-wider"
             )}
           >
