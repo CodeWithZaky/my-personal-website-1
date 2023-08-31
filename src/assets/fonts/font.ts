@@ -9,7 +9,7 @@ const TungstenBold2 = localFont({
   display: "swap",
 });
 const TungstenBold3 = localFont({
-  src: "./font-face/Tungsten-Bold2.woff2",
+  src: "./font-face/Tungsten-Bold4.ttf",
   display: "swap",
 });
 
