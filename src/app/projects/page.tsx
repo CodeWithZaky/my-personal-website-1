@@ -1,5 +1,5 @@
 import { Metadata } from "next/types";
-import { thumbnail_projects } from "@/src/components/templates/Tubmnail-Projects";
+import { thumbnail_projects } from "@/src/components/atoms/items/Tubmnail-Projects";
 import clsx from "clsx";
 
 export const metadata: Metadata = {
