@@ -1,6 +1,6 @@
 import Copyright from "@/components/molecules/Copyright";
 import clsx from "clsx";
-import { social_icons } from "../../templates/Social-Icons";
+import { social_icons } from "../../atoms/items/Social-Icons";
 
 const ContactSection = () => {
   return (

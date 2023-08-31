@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import newLogoZ from "@/assets/images/newLogoZ.svg";
 import Hamburger from "../../atoms/buttons/Hamburger";
+import NavLink from "../../molecules/NavLink";
 
 interface Props {
   toggleButton: () => void;
@@ -20,9 +21,7 @@ const MainNavbar = ({ toggleButton }: Props) => {
           />
         </Link>
         <div className="items-center justify-center hidden gap-10 font-mono text-xl font-bold md:flex text-valorantWhite">
-          <Link href={"/"}>HOME</Link>
-          <Link href={"/about"}>ABOUT</Link>
-          <Link href={"/projects"}>PROJECTS</Link>
+          <NavLink />
         </div>
         <Hamburger toggleButton={toggleButton} />
       </section>

@@ -2,6 +2,7 @@ import newLogoZ from "@/assets/images/newLogoZ.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { IoCloseSharp } from "react-icons/io5";
+import NavLink from "../../molecules/NavLink";
 
 interface Props {
   toggleButton: () => void;
@@ -36,9 +37,7 @@ const Sidebar = ({ toggleButton, toggle }: Props) => {
           />
         </div>
         <div className="flex flex-col items-end justify-center gap-10 pt-10 pr-10 font-mono text-xl font-bold text-valorantWhite">
-          <Link href={"/"}>HOME</Link>
-          <Link href={"/about"}>ABOUT</Link>
-          <Link href={"/projects"}>PROJECTS</Link>
+          <NavLink />
         </div>
       </div>
     </section>

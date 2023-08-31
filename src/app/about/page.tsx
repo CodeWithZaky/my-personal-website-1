@@ -1,9 +1,9 @@
-import { about_me } from "@/src/components/templates/About-Me";
-import { skill_items } from "@/src/components/templates/Skilll-Items";
+import { about_me } from "@/src/components/atoms/items/About-Me";
+import { skill_items } from "@/src/components/atoms/items/Skilll-Items";
 import { DINNextW1G, TungsenBold } from "@/assets/fonts/font";
 import clsx from "clsx";
 import { Metadata } from "next/types";
-import { social_icons } from "@/src/components/templates/Social-Icons";
+import { social_icons } from "@/src/components/atoms/items/Social-Icons";
 
 export const metadata: Metadata = {
   title: "About - Portfolio",
