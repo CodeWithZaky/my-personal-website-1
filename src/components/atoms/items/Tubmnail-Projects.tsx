@@ -1,7 +1,7 @@
 import matrixcalc from "@/assets/images/tumbnail-project/matrix-calculator-2.png";
 import numbconv from "@/assets/images/tumbnail-project/number-convertion-2.png";
 import myportfolio from "@/assets/images/tumbnail-project/my-portfolio-2.png";
-import CardProject from "../molecules/CardProject";
+import CardProject from "../../molecules/CardProject";
 
 const matrixCalc = (
   <CardProject
