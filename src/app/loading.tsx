@@ -9,7 +9,7 @@ const SkeletonHome = () => {
           <div className="flex flex-col items-center justify-center w-full gap-4 py-16 m-auto tracking-widest">
             <div className="w-[15px] h-[15px] bg-valorant self-start animate-pulse" />
             <h3 className="text-xl font-bold tracking-widest text-center md:text-2xl text-valorantWhite animate-pulse">
-              {"Welcome to my personal website"}
+              Welcome to my personal website
             </h3>
             <h1 className="font-bold text-center text-7xl md:text-8xl text-valorantWhite tracking-[.4rem] animate-pulse">
               {"I'M ZAKY"}
