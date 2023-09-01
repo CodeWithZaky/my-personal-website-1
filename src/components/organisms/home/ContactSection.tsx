@@ -1,11 +1,11 @@
 import Copyright from "@/components/molecules/Copyright";
 import clsx from "clsx";
-import { social_icons } from "../../atoms/items/Social-Icons";
+import { social_icons } from "../../atoms/data/Social-Icons";
 
 const ContactSection = () => {
   return (
     <div className="flex flex-col items-end justify-center w-[70%] m-auto border-t border-r border-valorantBlack/50 py-20 gap-5">
-      <div className="text-2xl font-semibold text-center sm:text-3xl md:text-5xl text-valorantBlack">
+      <div className="text-2xl text-center sm:text-3xl md:text-5xl text-valorantBlack">
         REACH ME OUT
       </div>
       <div className="flex flex-row flex-wrap items-center justify-end gap-3 text-2xl sm:text-3xl md:text-4xl text-valorantBlack">
