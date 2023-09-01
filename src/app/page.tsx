@@ -1,7 +1,7 @@
 import { Metadata } from "next/types";
-import ContactSection from "@/src/components/organisms/pages/ContactSection";
-import LatestProjectSection from "@/src/components/organisms/pages/LatestProjectSection";
-import HeaderSection from "@/components/organisms/pages/HeaderSection";
+import ContactSection from "@/components/organisms/home/ContactSection";
+import LatestProjectSection from "@/components/organisms/home/LatestProjectSection";
+import HeaderSection from "@/components/organisms/home/HeaderSection";
 
 export const metadata: Metadata = {
   title: "Home - Portfolio",

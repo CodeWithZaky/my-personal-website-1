@@ -8,8 +8,8 @@ const matrixCalc = (
     linkHref="https://matrix-calc.vercel.app"
     srcTumb={matrixcalc}
     title="MATRIX CALCULATOR"
-    stackTumb={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
-    textTumb="MATRIX CALCULATOR WEB APPLICATION DEVELOPED TO FULFILL UNIVERSITY ASSIGNMENTS"
+    stack={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
+    description="MATRIX CALCULATOR WEB APPLICATION DEVELOPED TO FULFILL UNIVERSITY ASSIGNMENTS"
   />
 );
 const numbConv = (
@@ -17,8 +17,8 @@ const numbConv = (
     linkHref="https://numconv.vercel.app"
     srcTumb={numbconv}
     title="NUMBER CONVERTION"
-    stackTumb={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
-    textTumb="NUMBER CONVERTION WEB APPLICATION DEVELOPED TO FULFILL A UNIVERSITY ASSIGNMENT"
+    stack={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
+    description="NUMBER CONVERTION WEB APPLICATION DEVELOPED TO FULFILL A UNIVERSITY ASSIGNMENT"
   />
 );
 const myPortfolio = (
@@ -26,8 +26,8 @@ const myPortfolio = (
     linkHref="https://azaku.vercel.app"
     srcTumb={myportfolio}
     title="MY PORTFOLIO"
-    stackTumb={["NEXT JS", "TAILWIND CSS", "TYPESCRIPT", "CLSX"]}
-    textTumb="PERSONAL WEBSITE FOR INFORMATION ABOUT ME, ESPECIALLY IN THE FIELD OF TECHNOLOGY"
+    stack={["NEXT JS", "TAILWIND CSS", "TYPESCRIPT", "CLSX"]}
+    description="PERSONAL WEBSITE FOR INFORMATION ABOUT ME, ESPECIALLY IN THE FIELD OF TECHNOLOGY"
   />
 );
 

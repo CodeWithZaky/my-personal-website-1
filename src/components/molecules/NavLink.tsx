@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { nav_links } from "../atoms/items/Nav-Link";
+import { nav_links } from "../atoms/data/Nav-Link";
 
 const NavLink = () => {
   return (

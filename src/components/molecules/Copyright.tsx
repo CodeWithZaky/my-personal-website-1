@@ -1,6 +1,5 @@
 import { DINNextW1G } from "@/assets/fonts/font";
 import clsx from "clsx";
-import React from "react";
 
 const Copyright = () => {
   return (
