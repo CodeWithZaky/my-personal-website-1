@@ -18,7 +18,7 @@ const CardProject = (props: CardProjectType) => {
       target="_blank"
       className={clsx(
         DINNextW1G.className,
-        "flex flex-col items-start justify-start w-full gap-2 cursor-pointer"
+        "flex flex-col items-start justify-between w-full gap-2 cursor-pointer"
       )}
     >
       <Image
@@ -26,17 +26,17 @@ const CardProject = (props: CardProjectType) => {
         src={srcTumb}
         className="w-full h-full mb-2 border border-valorantBlack/10"
       />
-      <h1 className="text-xl font-bold text-valorantBlack hover:underline">
+      <h1 className="text-xl font-bold uppercase text-valorantBlack hover:underline">
         {title}
       </h1>
       <div className="flex flex-wrap items-start justify-start gap-1 text-xs text-valorantWhite">
         {stack.map((item, index) => (
-          <p key={index} className="px-2 bg-valorantBlack">
+          <p key={index} className="px-2 uppercase bg-valorantBlack">
             {item}
           </p>
         ))}
       </div>
-      <p className="font-bold leading-none text-md md:text-md text-valorantBlack/80 hover:text-valorantBlack">
+      <p className="font-bold leading-none uppercase text-md md:text-md text-valorantBlack/80 hover:text-valorantBlack">
         {description}
       </p>
     </a>
