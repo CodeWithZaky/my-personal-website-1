@@ -9,7 +9,7 @@ const HeaderSection = () => {
     <div className="relative w-full overflow-hidden bg-valorantBlack">
       <Triangle />
       <div className="relative mx-auto w-[70%] flex flex-col border-x border-valorantWhite/50">
-        <div className="flex flex-col items-center justify-center w-full gap-4 py-8 m-auto tracking-widest">
+        <div className="flex flex-col items-center justify-center w-full gap-4 py-5 m-auto tracking-widest">
           <Square className="w-[15px] h-[15px] bg-valorant hover:bg-transparent hover:border hover:border-valorant self-start transition-all" />
           <SelfIntroductios />
           <LearnMoreButton />

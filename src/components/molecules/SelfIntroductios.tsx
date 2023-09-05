@@ -7,15 +7,20 @@ const SelfIntroductios = () => {
       <h3
         className={clsx(
           DINNextW1G.className,
-          "text-xl text-center md:text-2xl text-valorantWhite tracking-widest"
+          "text-xl text-center md:text-2xl text-valorantWhite tracking-widest "
         )}
       >
         welcome to my personal website
       </h3>
-      <h1 className="text-center text-6xl md:text-8xl text-valorantWhite tracking-[.4rem]">
+      <h1 className="text-center text-7xl sm:text-8xl md:text-9xl text-valorantWhite">
         {"I'M ZAKY"}
       </h1>
-      <h1 className="text-4xl text-center md:text-5xl text-valorantWhite tracking-[.4rem]">
+      <h1
+        className={clsx(
+          DINNextW1G.className,
+          "text-4xl text-center md:text-5xl text-valorantWhite"
+        )}
+      >
         FRONTEND WEB DEVELOPER
       </h1>
     </>
