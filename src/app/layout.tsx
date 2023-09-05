@@ -1,12 +1,10 @@
 "use client";
-import { useContext, useState } from "react";
 import "/node_modules/tailwindcss/tailwind.css";
-import Navbar from "@/src/components/organisms/nav/Navbar";
-import Sidebar from "@/src/components/organisms/nav/Sidebar";
-import clsx from "clsx";
-import { TungstenBold } from "@/assets/fonts/font";
-import React from "react";
+import Navbar from "@/components/organisms/nav/Navbar";
+import { useContext } from "react";
 import ToggleButtonProvider, { ToggleContext } from "../context/ToggleButton";
+import { TungstenBold } from "@/assets/fonts/font";
+import clsx from "clsx";
 
 export default function RootLayout({
   children,
@@ -18,10 +16,9 @@ export default function RootLayout({
       <html lang="en" className={clsx(TungstenBold.className, "scroll-smooth")}>
         <Head />
         <Body>
-          <nav>
+          <>
             <Navbar />
-            <Sidebar />
-          </nav>
+          </>
           {children}
         </Body>
       </html>
@@ -29,16 +26,21 @@ export default function RootLayout({
   );
 }
 
-const Head = () => (
-  <head>
-    <meta
-      name="description"
-      content="Hi, I'm a frontend web developer based in Indonesia."
-    />
-  </head>
-);
+const Head = () => {
+  return (
+    <head>
+      <meta
+        name="description"
+        content="Hi, I'm a frontend web developer based in Indonesia."
+      />
+      <meta name="description" content="the best website in the world" />
+    </head>
+  );
+};
+
 const Body = ({ children }: { children: React.ReactNode }) => {
   const { isToggled } = useContext(ToggleContext);
+
   return (
     <body
       className={clsx(
