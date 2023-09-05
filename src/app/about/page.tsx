@@ -1,7 +1,10 @@
-import { DINNextW1G } from "@/assets/fonts/font";
-import clsx from "clsx";
 import { Metadata } from "next/types";
-import AboutContent from "@/src/components/organisms/about/AboutContent";
+import TitleAbout from "@/src/components/organisms/about/TitleAbout";
+import AboutMeSection from "@/src/components/organisms/about/AboutMeSection";
+import SkillSection from "@/src/components/organisms/about/SkillSection";
+import SocialSection from "@/src/components/organisms/about/SocialSection";
+import clsx from "clsx";
+import { DINNextW1G } from "@/src/assets/fonts/font";
 
 export const metadata: Metadata = {
   title: "About - Portfolio",
@@ -16,12 +19,10 @@ const AboutPage = () => {
         "flex flex-col items-start justify-center w-[90%] md:w-[70%] m-auto h-full border-l border-l-valorantBlack/50 gap-5 pt-10 py-20"
       )}
     >
-      <AboutContent>
-        <AboutContent.Title />
-        <AboutContent.AboutMe />
-        <AboutContent.Skill />
-        <AboutContent.Social />
-      </AboutContent>
+      <TitleAbout />
+      <AboutMeSection />
+      <SkillSection />
+      <SocialSection />
     </div>
   );
 };

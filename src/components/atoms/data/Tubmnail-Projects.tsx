@@ -1,7 +1,7 @@
 import matrixcalc from "@/assets/images/tumbnail-project/matrix-calculator-2.png";
 import numbconv from "@/assets/images/tumbnail-project/number-convertion-2.png";
 import myportfolio from "@/assets/images/tumbnail-project/my-portfolio-2.png";
-import CardProject from "../../molecules/CardProject";
+import CardProject from "../../tamplates/CardProject";
 
 const matrixCalc = (
   <CardProject
@@ -16,9 +16,9 @@ const numbConv = (
   <CardProject
     linkHref="https://numconv.vercel.app"
     srcTumb={numbconv}
-    title="NUMBER CONVERTION"
+    title="NUMBER CONVERSION"
     stack={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
-    description="NUMBER CONVERTION WEB APPLICATION DEVELOPED TO FULFILL A UNIVERSITY ASSIGNMENT"
+    description="NUMBER CONVERSION WEB APPLICATION DEVELOPED TO FULFILL A UNIVERSITY ASSIGNMENT"
   />
 );
 const myPortfolio = (
@@ -26,7 +26,7 @@ const myPortfolio = (
     linkHref="https://azaku.vercel.app"
     srcTumb={myportfolio}
     title="MY PORTFOLIO"
-    stack={["NEXT JS", "TAILWIND CSS", "TYPESCRIPT", "CLSX"]}
+    stack={["NEXT JS", "TAILWIND CSS", "FRAMERMOTION"]}
     description="PERSONAL WEBSITE FOR INFORMATION ABOUT ME, ESPECIALLY IN THE FIELD OF TECHNOLOGY"
   />
 );
