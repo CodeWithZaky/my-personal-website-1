@@ -7,7 +7,7 @@ export const social_icons: { icon: React.ReactNode; url: string }[] = [
   },
   {
     icon: <SiInstagram />,
-    url: "https://www.instagram.com/superrrrrrrzzzzzzz",
+    url: "https://www.instagram.com/zaky0bed",
   },
   {
     icon: <SiGithub />,
