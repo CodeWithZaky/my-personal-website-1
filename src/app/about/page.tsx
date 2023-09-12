@@ -16,7 +16,7 @@ const AboutPage = () => {
     <div
       className={clsx(
         DINNextW1G.className,
-        "flex flex-col items-start justify-center w-[90%] md:w-[70%] m-auto h-full border-l border-l-valorantBlack/50 gap-5 pt-10 py-20"
+        "flex flex-col items-start justify-center w-3/4 m-auto h-full border-l border-l-valorantBlack/50 gap-5 pt-10 py-20"
       )}
     >
       <TitleAbout />

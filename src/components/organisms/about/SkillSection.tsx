@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 const SkillSection = () => {
   return (
-    <div className="inline-flex flex-wrap gap-2 font-semibold lg:pr-20 text-md md:text-xl">
+    <div className="inline-flex flex-wrap w-4/5 gap-2 font-semibold md:pr-16 lg:pr-20 text-md md:text-xl">
       {skill_items.map((item, index) => (
         <p
           key={index}

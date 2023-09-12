@@ -6,7 +6,7 @@ const TitleAbout = () => {
     <h1
       className={clsx(
         TungstenBold.className,
-        "text-2xl md:text-3xl lg:text-4xl text-valorantBlack"
+        "text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-valorantBlack"
       )}
     >
       ABOUT ME
