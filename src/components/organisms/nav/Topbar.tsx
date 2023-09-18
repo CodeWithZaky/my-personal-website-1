@@ -7,7 +7,7 @@ import NavLink from "../../molecules/NavLink";
 
 const Topbar = () => {
   return (
-    <section className="z-20 flex items-center justify-between w-full gap-10 border-b bg-valorantBlack py-7 border-valorantWhite/10 md:justify-center">
+    <section className="z-20 flex items-center justify-between w-screen gap-10 border-b bg-valorantBlack py-7 border-valorantWhite/10 md:justify-center">
       <Link href={"/"}>
         <Image
           alt="image"
