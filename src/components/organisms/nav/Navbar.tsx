@@ -3,7 +3,7 @@ import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="flex items-end justify-center">
       <Topbar />
       <Sidebar />
     </nav>
