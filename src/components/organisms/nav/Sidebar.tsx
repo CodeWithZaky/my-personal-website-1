@@ -1,3 +1,4 @@
+"use client";
 import newLogoZ from "@/assets/images/newLogoZ.svg";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
@@ -5,17 +6,17 @@ import { IoCloseSharp } from "react-icons/io5";
 import NavLink from "../../molecules/NavLink";
 import { useContext } from "react";
 import { ToggleContext } from "@/src/context/ToggleButton";
+import clsx from "clsx";
 
 export default function Sidebar() {
   const { isToggled } = useContext(ToggleContext);
 
   return (
     <section
-      className={
-        isToggled
-          ? "flex w-full h-full absolute top-0 right-0 z-20 md:hidden"
-          : "hidden"
-      }
+      className={clsx(
+        isToggled ? "w-full" : "w-[0px]",
+        "transition-all duration-300 h-screen fixed flex top-0 right-0 z-20 md:hidden overflow-hidden"
+      )}
     >
       <Outside />
       <div className="w-[60%] h-full flex-col justify-start items-center bg-black gap-10 border-l-2  border-l-white/5">
