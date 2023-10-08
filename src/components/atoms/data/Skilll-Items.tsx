@@ -5,9 +5,10 @@ export const skill_items: string[] = [
   "typescript",
   "react query",
   "react hook form",
-  "framer motion",
+  "shadcn ui",
   "clsx",
   "swipper js",
   "daisy ui",
   "sweetalert2",
+  "framer motion",
 ];
