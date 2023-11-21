@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "@/styles/globals.css";
 import Navbar from "@/components/organisms/nav/Navbar";
 import ToggleButtonProvider from "../context/ToggleButton";
 import { TungstenBold } from "@/assets/fonts/font";
