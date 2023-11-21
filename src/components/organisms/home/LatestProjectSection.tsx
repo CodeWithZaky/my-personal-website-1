@@ -1,6 +1,9 @@
 "use client";
+import { DINNextW1G } from "@/src/assets/fonts/font";
 import { thumbnail_projects } from "@/src/components/atoms/data/Tubmnail-Projects";
+import clsx from "clsx";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const LatestProject = () => {
@@ -40,7 +43,16 @@ const LatestProject = () => {
       >
         LATEST PROJECT
       </motion.div>
-      <div className="grid grid-cols-1 gap-5 transition-all md:grid-cols-1 lg:grid-cols-3">
+      <div className="relative grid grid-cols-1 gap-5 transition-all md:grid-cols-1 lg:grid-cols-3">
+        <Link
+          href={"/projects"}
+          className={clsx(
+            DINNextW1G.className,
+            "absolute underline -bottom-10 md:-top-8 left-0 md:left-[85%] text-xl font-bold text-valorant md:text-valorantBlue hover:text-valorantBlue/90 hover:-bottom-9 md:hover:-top-9 transition-all whitespace-nowrap"
+          )}
+        >
+          {"More Project >"}
+        </Link>
         {thumbnail_projects.slice(0, 3).map((item, index) => {
           return <div key={index.toString()}>{item}</div>;
         })}
