@@ -24,7 +24,7 @@ const numbConv = (
 );
 const myPortfolio = (
     <CardProject
-        linkHref="https://azaku.vercel.app"
+        linkHref="https://zaky.vercel.app"
         srcTumb={myportfolio}
         title="azaku"
         stack={["NEXT JS", "TAILWIND CSS", "FRAMERMOTION"]}
