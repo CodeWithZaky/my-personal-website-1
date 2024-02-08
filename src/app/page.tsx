@@ -1,20 +1,16 @@
 import { Metadata } from "next/types";
-import ContactSection from "@/components/organisms/home/ContactSection";
-import LatestProjectSection from "@/components/organisms/home/LatestProjectSection";
-import HeaderSection from "@/components/organisms/home/HeaderSection";
+import HomePage from "@/components/home/index";
 
 export const metadata: Metadata = {
-  title: "Home - Portfolio",
-  description: "This is the home page and I wish you all the best",
+    title: "Home - Portfolio",
+    description: "This is the home page and I wish you all the best",
 };
 
 const Home = () => {
-  return (
-    <section>
-      <HeaderSection />
-      <LatestProjectSection />
-      <ContactSection />
-    </section>
-  );
+    return (
+        <section>
+            <HomePage />
+        </section>
+    );
 };
 export default Home;
