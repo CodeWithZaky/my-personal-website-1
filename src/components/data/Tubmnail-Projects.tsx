@@ -26,7 +26,7 @@ const myPortfolio = (
     <CardProject
         linkHref="https://zaky.vercel.app"
         srcTumb={myportfolio}
-        title="azaku"
+        title="zaky"
         stack={["NEXT JS", "TAILWIND CSS", "FRAMERMOTION"]}
         description="PERSONAL WEBSITE FOR INFORMATION ABOUT ME, ESPECIALLY IN THE FIELD OF TECHNOLOGY"
     />
