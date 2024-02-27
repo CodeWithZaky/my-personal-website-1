@@ -1,6 +1,4 @@
 import { Metadata } from "next/types";
-import clsx from "clsx";
-import { DINNextW1G } from "@/src/assets/fonts/font";
 import AboutPage from "@/src/components/about";
 
 export const metadata: Metadata = {
