@@ -28,7 +28,7 @@ const ProjectsPage = () => {
                     )}
                 >
                     <Square className="w-[10px] h-[10px] bg-valorant" />
-                    <h1 className="z-10 font-bold text-7xl text-valorant sm:-mb-0 md:-mb-9 md:text-8xl lg:text-9xl">
+                    <h1 className="z-10 font-bold text-5xl sm:text-7xl text-valorant sm:-mb-0 md:-mb-9 md:text-8xl lg:text-9xl">
                         PROJECTS
                     </h1>
                     <div className="w-[90%] md:w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 border-l border-valorantBlack/50 gap-3">

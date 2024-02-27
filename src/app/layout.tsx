@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/navbar/index";
-// import { TungstenBold } from "@/assets/fonts/font";
 import { Oswald } from "next/font/google";
 import clsx from "clsx";
 import { ThemeProvider } from "@/components/theme-provider";
