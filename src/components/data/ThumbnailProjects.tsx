@@ -8,7 +8,7 @@ const matrixCalc = (
     <CardProject
         linkHref="https://matrixcalculator.vercel.app"
         srcTumb={matrixcalc}
-        title="matrix-calc"
+        title="matrix-calculator"
         stack={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
         description="This website was built as part of a college assignment to create an application for the addition, subtraction, and multiplication of two matrices"
     />
