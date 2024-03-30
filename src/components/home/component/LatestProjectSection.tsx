@@ -1,11 +1,11 @@
 "use client";
 import { DINNextW1G } from "@/src/assets/fonts/font";
-import { thumbnail_projects } from "@/src/components/data/Tubmnail-Projects";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoMdArrowDropright } from "react-icons/io";
+import { thumbnail_projects } from "../../data/ThumbnailProjects";
 
 const LatestProject = () => {
     const [isHovered, setIsHovered] = useState(false);
