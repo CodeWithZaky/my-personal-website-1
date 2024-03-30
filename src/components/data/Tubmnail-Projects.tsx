@@ -6,7 +6,7 @@ import CardProject from "../CardProject";
 
 const matrixCalc = (
     <CardProject
-        linkHref="https://matrixcalculator.vercel.app"
+        linkHref="https://matrix-calc.vercel.app"
         srcTumb={matrixcalc}
         title="matrix-calc"
         stack={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
