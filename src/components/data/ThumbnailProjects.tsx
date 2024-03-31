@@ -24,7 +24,7 @@ const numberConverter = (
 );
 const myPortfolio = (
     <CardProject
-        linkHref="https://v1.zaky.vercel.app"
+        linkHref="https://zaky.vercel.app"
         srcTumb={myPortfolioImg}
         title="zaky"
         stack={["NEXT JS", "TAILWIND CSS", "FRAMERMOTION"]}
