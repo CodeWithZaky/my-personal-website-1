@@ -53,7 +53,7 @@ const LatestProject = () => {
                 href={"/projects"}
                 className={clsx(
                     DINNextW1G.className,
-                    "group flex items-center hover:ml-3 pl-3 py-1 bg-valorant text-valorantWhite uppercase border-valorantBlack text-3xl mt-5 font-bold transition-all whitespace-nowrap"
+                    "group flex items-center uppercase bg-valorant text-valorantWhite gap-1 px-4 py-2 cursor-pointer  font-semibold tracking-widest duration-300 hover:gap-2 hover:translate-x-3"
                 )}
             >
                 More Project

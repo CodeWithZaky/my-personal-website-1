@@ -15,7 +15,7 @@ const matrixCalcucalor = (
 );
 const numberConverter = (
     <CardProject
-        linkHref="number-converter-byzaky.vercel.app"
+        linkHref="https://number-converter-2.vercel.app"
         srcTumb={numberConverterImg}
         title="number-converter"
         stack={["NEXT JS", "TAILWIND CSS", "DAISYUI", "SWEETALERT2"]}
