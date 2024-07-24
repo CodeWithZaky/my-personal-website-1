@@ -1,7 +1,6 @@
 import newLogoZ from "@/assets/images/newLogoZ.svg";
 import Image from "next/image";
 import Link from "next/link";
-import ValorantButton from "../buttons/ValorantButton";
 import NavLink from "./component/NavLink";
 import { Sidebar } from "./component/sidebar";
 
@@ -19,7 +18,7 @@ const Navbar = () => {
         <div className="md:flex justify-center items-center gap-10 hidden font-bold font-mono text-valorantWhite text-xl">
           <NavLink />
         </div>
-        <ValorantButton>Hire Me</ValorantButton>
+        {/* <ValorantButton>Hire Me</ValorantButton> */}
         <div className="block md:hidden">
           <Sidebar />
         </div>
