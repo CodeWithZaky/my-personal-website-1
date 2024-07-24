@@ -1,4 +1,4 @@
-import Copyright from "@/src/components/Copyright";
+import Copyright from "@/src/components/copyright";
 import clsx from "clsx";
 import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 

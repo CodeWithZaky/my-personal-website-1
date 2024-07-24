@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar/index";
+import Navbar from "@/components/navbar/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import "@/styles/globals.css";
 import clsx from "clsx";

@@ -1,8 +1,8 @@
 import newLogoZ from "@/assets/images/newLogoZ.svg";
 import Image from "next/image";
 import Link from "next/link";
-import NavLink from "./component/NavLink";
-import { Sidebar } from "./component/sidebar";
+import NavLink from "./nav-link";
+import { Sidebar } from "./sidebar";
 
 const Navbar = () => {
   return (

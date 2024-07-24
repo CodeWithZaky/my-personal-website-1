@@ -1,5 +1,5 @@
 "use client";
-import { thumbnail_projects } from "@/components/projects/ThumbnailProjects";
+import { thumbnail_projects } from "@/components/projects/project";
 import { DINNextW1G } from "@/src/assets/fonts/font";
 import clsx from "clsx";
 import { motion } from "framer-motion";

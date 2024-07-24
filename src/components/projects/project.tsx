@@ -2,7 +2,7 @@ import gedongarumImg from "@/assets/images/tumbnail-project/gedongarum.png";
 import matrixCalculatorImg from "@/assets/images/tumbnail-project/matrix-calculator-2.png";
 import myPortfolioImg from "@/assets/images/tumbnail-project/my-portfolio-2.png";
 import numberConverterImg from "@/assets/images/tumbnail-project/number-convertion-2.png";
-import CardProject from "./CardProject";
+import CardProject from "./card-project";
 
 const matrixCalcucalor = (
   <CardProject
@@ -24,7 +24,7 @@ const numberConverter = (
 );
 const myPortfolio = (
   <CardProject
-    linkHref="https://v1.zaky.vercel.app"
+    linkHref="https://zaky.vercel.app"
     srcTumb={myPortfolioImg}
     title="zaky"
     stack={["NEXT JS", "TAILWIND CSS", "FRAMERMOTION"]}

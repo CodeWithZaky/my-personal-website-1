@@ -1,4 +1,4 @@
-import { social_icons } from "../home/ContactSection";
+import { social_icons } from "../home/contact-section";
 
 const SocialSection = () => {
   return (

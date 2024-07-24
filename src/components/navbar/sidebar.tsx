@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
-import NavLink from "./NavLink";
+import NavLink from "./nav-link";
 
 export function Sidebar() {
   return (
