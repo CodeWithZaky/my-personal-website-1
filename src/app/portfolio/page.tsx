@@ -1,7 +1,7 @@
 import { Metadata } from "next/types";
 import Square from "@/src/components/ornaments/Square";
 import clsx from "clsx";
-import { thumbnail_projects } from "@/src/components/data/ThumbnailProjects";
+import { thumbnail_projects } from "@/src/components/projects/index";
 
 export const metadata: Metadata = {
     title: "Project - Portfolio",

@@ -9,17 +9,17 @@ const SkeletonAboutMe = () => {
         "flex flex-col items-start justify-center w-[90%] md:w-[70%] m-auto h-full border-l border-l-gray-400 gap-7 py-10"
       )}
     >
-      <div className="w-1/4 h-8 bg-gray-400 animate-pulse md:w-1/2"></div>
-      <div className="animate-pulse bg-gray-400 h-8 w-3/4 md:w-[80%]"></div>
-      <div className="w-1/2 h-8 bg-gray-400 animate-pulse"></div>
-      <div className="w-1/4 h-8 bg-gray-400 animate-pulse md:w-1/2"></div>
-      <div className="animate-pulse bg-gray-400 h-8 w-3/4 md:w-[80%]"></div>
-      <div className="w-1/2 h-8 bg-gray-400 animate-pulse"></div>
+      <div className="bg-gray-400 w-1/4 md:w-1/2 h-8 animate-pulse"></div>
+      <div className="bg-gray-400 w-3/4 md:w-[80%] h-8 animate-pulse"></div>
+      <div className="bg-gray-400 w-1/2 h-8 animate-pulse"></div>
+      <div className="bg-gray-400 w-1/4 md:w-1/2 h-8 animate-pulse"></div>
+      <div className="bg-gray-400 w-3/4 md:w-[80%] h-8 animate-pulse"></div>
+      <div className="bg-gray-400 w-1/2 h-8 animate-pulse"></div>
       <div className="inline-flex flex-wrap gap-1 font-semibold text-md md:text-xl">
         {skeletonItems.map((_, index) => (
           <div
             key={index}
-            className="w-20 h-6 bg-gray-400 rounded-sm animate-pulse md:w-24"
+            className="bg-gray-400 rounded-sm w-20 md:w-24 h-6 animate-pulse"
           ></div>
         ))}
       </div>
@@ -27,7 +27,7 @@ const SkeletonAboutMe = () => {
         {skeletonItems.map((_, index) => (
           <div
             key={index}
-            className="w-12 h-12 bg-gray-400 rounded-xl animate-pulse"
+            className="bg-gray-400 rounded-xl w-12 h-12 animate-pulse"
           ></div>
         ))}
       </div>

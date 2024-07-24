@@ -1,7 +1,7 @@
 function Triangle() {
   return (
-    <div className="absolute bottom-0 left-0 inline-block w-auto overflow-hidden">
-      <div className="h-[50px] w-[25px] sm:h-[100px] sm:w-[50px] md:h-[200px] md:w-[100px] bg-valorantWhite -rotate-45 transform origin-bottom-right"></div>
+    <div className="inline-block bottom-0 left-0 absolute w-auto overflow-hidden">
+      <div className="bg-valorantWhite w-[25px] sm:w-[50px] md:w-[100px] h-[50px] sm:h-[100px] md:h-[200px] transform origin-bottom-right -rotate-45"></div>
     </div>
   );
 }
