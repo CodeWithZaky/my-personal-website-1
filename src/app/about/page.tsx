@@ -1,7 +1,7 @@
-import AboutMeSection from "@/src/components/about/AboutMeSection";
-import SkillSection from "@/src/components/about/SkillSection";
-import SocialSection from "@/src/components/about/SocialSection";
-import TitleAbout from "@/src/components/about/TitleAbout";
+import AboutMeSection from "@/src/components/about/about-me-section";
+import SkillSection from "@/src/components/about/skill-section";
+import SocialSection from "@/src/components/about/social-section";
+import TitleAbout from "@/src/components/about/title-about";
 import { Metadata } from "next/types";
 
 export const metadata: Metadata = {

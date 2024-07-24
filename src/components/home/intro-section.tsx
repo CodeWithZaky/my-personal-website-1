@@ -1,8 +1,8 @@
 import Link from "next/link";
-import ValorantButton from "../buttons/ValorantButton";
-import Square from "../ornaments/Square";
-import VerticalLine from "../ornaments/VerticalLine";
-import IntroMySelf from "./IntroMySelf";
+import ValorantButton from "../buttons/valorant-button";
+import Square from "../ornaments/square";
+import VerticalLine from "../ornaments/vertical-line";
+import IntroMySelf from "./intro-my-self";
 
 const IntroSection = () => {
   return (
