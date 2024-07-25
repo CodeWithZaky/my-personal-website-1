@@ -1,13 +1,8 @@
 "use client";
-import { thumbnail_projects } from "@/components/projects/project";
-import { DINNextW1G } from "@/src/assets/fonts/font";
-import clsx from "clsx";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { IoMdArrowDropright } from "react-icons/io";
 
-const LatestProject = () => {
+const LatestProjectAnimate = ({ children }: { children: React.ReactNode }) => {
   const [isHovered, setIsHovered] = useState(false);
   const variants = {
     hover: {
@@ -30,7 +25,6 @@ const LatestProject = () => {
   useEffect(() => {
     setIsHovered(false);
   }, []);
-
   return (
     <div
       onMouseEnter={handleMouseEnter}
@@ -44,23 +38,9 @@ const LatestProject = () => {
       >
         LATEST PROJECT
       </motion.div>
-      <div className="relative gap-5 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 transition-all">
-        {thumbnail_projects.slice(0, 3).map((item, index) => {
-          return <div key={index.toString()}>{item}</div>;
-        })}
-      </div>
-      <Link
-        href={"/projects"}
-        className={clsx(
-          DINNextW1G.className,
-          "group flex items-center uppercase bg-valorant text-valorantWhite gap-1 px-4 py-2 cursor-pointer  font-semibold tracking-widest duration-300 hover:gap-2 hover:translate-x-3"
-        )}
-      >
-        More Project
-        <IoMdArrowDropright className="group-hover:ml-3 text-4xl transition-all" />
-      </Link>
+      {children}
     </div>
   );
 };
 
-export default LatestProject;
+export default LatestProjectAnimate;

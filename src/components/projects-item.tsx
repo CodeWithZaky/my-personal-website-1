@@ -2,7 +2,45 @@ import gedongarumImg from "@/assets/images/tumbnail-project/gedongarum.png";
 import matrixCalculatorImg from "@/assets/images/tumbnail-project/matrix-calculator-2.png";
 import myPortfolioImg from "@/assets/images/tumbnail-project/my-portfolio-2.png";
 import numberConverterImg from "@/assets/images/tumbnail-project/number-convertion-2.png";
-import CardProject from "./card-project";
+import Image, { StaticImageData } from "next/image";
+
+interface CardProjectType {
+  srcTumb: StaticImageData;
+  title: string;
+  stack: string[];
+  description: string;
+  linkHref: string;
+}
+
+const CardProject = (props: CardProjectType) => {
+  const { linkHref, title, srcTumb, stack, description } = props;
+  return (
+    <a
+      href={`${linkHref}`}
+      target="_blank"
+      className="flex flex-col justify-between items-start gap-2 w-full cursor-pointer"
+    >
+      <Image
+        alt={title}
+        src={srcTumb}
+        className="border-valorantBlack/10 mb-2 border w-full h-full"
+      />
+      <h1 className="font-bold text-valorantBlack text-xl hover:underline uppercase">
+        {title}
+      </h1>
+      <div className="flex flex-wrap justify-start items-start gap-1 text-valorantWhite text-xs">
+        {stack.map((item, index) => (
+          <p key={index} className="bg-valorantBlack px-2 uppercase">
+            {item}
+          </p>
+        ))}
+      </div>
+      <p className="font-bold text-md text-valorantBlack/80 md:text-md hover:text-valorantBlack uppercase leading-none">
+        {description}
+      </p>
+    </a>
+  );
+};
 
 const matrixCalcucalor = (
   <CardProject
@@ -41,7 +79,7 @@ const infoGedongarum = (
   />
 );
 
-export const thumbnail_projects = [
+export const projects_item = [
   infoGedongarum,
   matrixCalcucalor,
   numberConverter,

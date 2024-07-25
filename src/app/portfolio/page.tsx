@@ -1,13 +1,13 @@
+import { projects_item } from "@/src/components/projects-item";
 import clsx from "clsx";
 import { Metadata } from "next/types";
-import { thumbnail_projects } from "../../components/projects/project";
 
 export const metadata: Metadata = {
-  title: "Project - Portfolio",
-  description: "This is the projects page and I wish you all the best",
+  title: "Portfolio Page",
+  description: "This is the portfolio page and I wish you all the best",
 };
 
-const ProjectsPage = () => {
+const PortfolioPage = () => {
   return (
     <section className="w-full min-h-screen">
       <div className="flex w-full h-[4rem]">
@@ -28,7 +28,7 @@ const ProjectsPage = () => {
             PROJECTS
           </h1>
           <div className="gap-3 border-valorantBlack/50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 border-l w-[90%] md:w-[80%]">
-            {thumbnail_projects.map((item, index) => {
+            {projects_item.map((item, index) => {
               return (
                 <div
                   key={index}
@@ -58,4 +58,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default PortfolioPage;
