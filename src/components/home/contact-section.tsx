@@ -1,4 +1,3 @@
-import Copyright from "@/src/components/copyright";
 import clsx from "clsx";
 import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 
@@ -39,7 +38,9 @@ const ContactSection = () => {
           );
         })}
       </div>
-      <Copyright />
+      <p className="text-center text-sm text-valorantBlack sm:text-md md:text-lg">
+        {"@2023 Ahmad Zaky Ubaidillah"}
+      </p>
     </div>
   );
 };

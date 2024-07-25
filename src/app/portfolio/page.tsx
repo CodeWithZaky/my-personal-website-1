@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { Metadata } from "next/types";
-import Square from "../../components/ornaments/square";
 import { thumbnail_projects } from "../../components/projects/project";
 
 export const metadata: Metadata = {
@@ -24,7 +23,7 @@ const ProjectsPage = () => {
             "flex flex-col items-end justify-end border-t border-r border-r-valorantBlack/50 border-t-valorantBlack/50"
           )}
         >
-          <Square className="bg-valorant w-[10px] h-[10px]" />
+          <div className="bg-valorant w-[10px] h-[10px]" />
           <h1 className="z-10 sm:-mb-0 md:-mb-9 font-bold text-5xl text-valorant sm:text-7xl md:text-8xl lg:text-9xl">
             PROJECTS
           </h1>
