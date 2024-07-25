@@ -1,6 +1,6 @@
+import { social_icons } from "@/src/components/social-icons";
 import clsx from "clsx";
 import { Metadata } from "next/types";
-import { social_icons } from "../page";
 
 export const metadata: Metadata = {
   title: "About Page",

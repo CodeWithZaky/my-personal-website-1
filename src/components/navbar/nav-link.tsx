@@ -7,8 +7,7 @@ export interface NavLink {
 const nav_links: NavLink[] = [
   { path: "/", title: "Home" },
   { path: "/about", title: "About" },
-  { path: "/portfolio", title: "Portfolio" },
-  { path: "/contact", title: "Contact" },
+  { path: "/project", title: "Project" },
 ];
 
 const NavLink = () => {

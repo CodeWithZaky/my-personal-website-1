@@ -18,7 +18,6 @@ const Navbar = () => {
         <div className="md:flex justify-center items-center gap-10 hidden font-bold font-mono text-valorantWhite text-xl">
           <NavLink />
         </div>
-        {/* <ValorantButton>Hire Me</ValorantButton> */}
         <div className="block md:hidden">
           <Sidebar />
         </div>

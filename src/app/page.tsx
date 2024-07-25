@@ -2,30 +2,15 @@ import clsx from "clsx";
 import Link from "next/link";
 import { Metadata } from "next/types";
 import { IoMdArrowDropright } from "react-icons/io";
-import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 import ValorantButton from "../components/buttons/valorant-button";
 import LatestProjectAnimate from "../components/latest-project-animate";
 import { projects_item } from "../components/projects-item";
+import { social_icons } from "../components/social-icons";
 
 export const metadata: Metadata = {
   title: "Home Page",
   description: "This is the home page and I wish you all the best",
 };
-
-export const social_icons: { icon: React.ReactNode; url: string }[] = [
-  {
-    icon: <SiLinkedin />,
-    url: "https://www.linkedin.com/in/ahmad-zaky-ubaidillah",
-  },
-  {
-    icon: <SiInstagram />,
-    url: "https://www.instagram.com/zaky0bed",
-  },
-  {
-    icon: <SiGithub />,
-    url: "https://github.com/ZakyInCode",
-  },
-];
 
 const HomeHomePage = () => {
   return (
@@ -58,7 +43,7 @@ const HomeHomePage = () => {
           })}
         </div>
         <Link
-          href={"/projects"}
+          href={"/project"}
           className={clsx(
             "group flex items-center uppercase bg-valorant text-valorantWhite gap-1 px-4 py-2 cursor-pointer  font-semibold tracking-widest duration-300 hover:gap-2 hover:translate-x-3"
           )}

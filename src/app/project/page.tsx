@@ -4,10 +4,10 @@ import { Metadata } from "next/types";
 
 export const metadata: Metadata = {
   title: "Portfolio Page",
-  description: "This is the portfolio page and I wish you all the best",
+  description: "This is the project page and I wish you all the best",
 };
 
-const PortfolioPage = () => {
+const ProjectPage = () => {
   return (
     <section className="w-full min-h-screen">
       <div className="flex w-full h-[4rem]">
@@ -58,4 +58,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default ProjectPage;
