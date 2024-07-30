@@ -11,6 +11,6 @@ export const social_icons: { icon: React.ReactNode; url: string }[] = [
   },
   {
     icon: <SiGithub />,
-    url: "https://github.com/ZakyInCode",
+    url: "https://github.com/CodeWithZaky",
   },
 ];

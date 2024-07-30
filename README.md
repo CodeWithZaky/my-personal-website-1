@@ -6,10 +6,10 @@
 <!-- ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"><b> Github Stats </b> -->
 
 <div align="center">
-<a href="https://github.com/ZakyInCode/">
+<a href="https://github.com/CodeWithZaky/">
   
-  ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZakyInCode&show_icons=true&theme=tokyonight&hide=contribs,issues)
-<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs?username=zakyscripters&show_icons=true&locale=en&layout=compact&line_height=19&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40" width="379"  alt="0xabdulkhalid"/> -->
+  ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=CodeWithZaky&show_icons=true&theme=tokyonight&hide=contribs,issues)
+<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs?username=CodeWithZaky&show_icons=true&locale=en&layout=compact&line_height=19&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40" width="379"  alt="0xabdulkhalid"/> -->
 </a>
 </div>
 
