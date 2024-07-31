@@ -1,7 +1,7 @@
 import newLogoZ from "@/assets/images/newLogoZ.svg";
+import { DATA } from "@/src/data/resume";
 import Image from "next/image";
 import Link from "next/link";
-import NavLink from "./nav-link";
 import { Sidebar } from "./sidebar";
 
 const Navbar = () => {
@@ -16,7 +16,11 @@ const Navbar = () => {
           />
         </Link>
         <div className="md:flex justify-center items-center gap-10 hidden font-bold font-mono text-valorantWhite text-xl">
-          <NavLink />
+          {DATA.navbar.map((item, index) => (
+            <Link key={index} href={item.path} className="uppercase">
+              {item.title}
+            </Link>
+          ))}
         </div>
         <div className="block md:hidden">
           <Sidebar />

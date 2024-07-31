@@ -1,4 +1,5 @@
 import { social_icons } from "@/src/components/social-icons";
+import { DATA } from "@/src/data/resume";
 import clsx from "clsx";
 import { Metadata } from "next/types";
 
@@ -6,25 +7,6 @@ export const metadata: Metadata = {
   title: "About Page",
   description: "This is the about page and I wish you all the best",
 };
-
-const skill_items: string[] = [
-  "react js",
-  "next js",
-  "tailwind",
-  "typescript",
-  "react query",
-  "react hook form",
-  "shadcn ui",
-  "swipper js",
-  "sweetalert2",
-  "framer motion",
-];
-
-const about_me: string[] = [
-  "Hello, I'm Ahmad Zaky Ubaidillah, commonly known as Zaky or Ubed. I'm a Front-End Web Developer with over 2 years of experience. My primary skills include React.js, Next.js, Tailwind CSS, and TypeScript.",
-  "Throughout my career journey, I've been dedicated to crafting captivating and responsive web interfaces. By harnessing technologies like React.js and Next.js, I create dynamic user experiences. Applying responsive design principles and adopting a mobile-first approach are integral parts of my work.",
-  "I'm also highly proficient in utilizing Tailwind CSS for swiftly designing layouts and components. The implementation of TypeScript enhances code quality and minimizes potential errors during development. I'm consistently enthusiastic about learning and staying updated with the latest trends in the Front-End industry, aiming to create innovative and engaging web experiences for users.",
-];
 
 const About = () => {
   return (
@@ -39,12 +21,12 @@ const About = () => {
           "pr-5 md:pr-0"
         )}
       >
-        {about_me.map((item, index) => {
+        {DATA.about_me.map((item, index) => {
           return <p key={index}>{item}</p>;
         })}
       </div>
       <div className="inline-flex flex-wrap gap-2 md:pr-16 lg:pr-20 w-4/5 font-semibold text-md md:text-xl">
-        {skill_items.map((item, index) => (
+        {DATA.skills.map((item, index) => (
           <p
             key={index}
             className="bg-valorantBlack px-3 text-center text-valorantWhite tracking-wider"

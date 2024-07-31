@@ -2,10 +2,11 @@ import clsx from "clsx";
 import Link from "next/link";
 import { Metadata } from "next/types";
 import { IoMdArrowDropright } from "react-icons/io";
-import ValorantButton from "../components/buttons/valorant-button";
 import LatestProjectAnimate from "../components/latest-project-animate";
-import { projects_item } from "../components/projects-item";
+import { CardProject } from "../components/projects-item";
 import { social_icons } from "../components/social-icons";
+import ValorantButton from "../components/valorant-button";
+import { DATA } from "../data/resume";
 
 export const metadata: Metadata = {
   title: "Home Page",
@@ -38,8 +39,18 @@ const HomeHomePage = () => {
       </div>
       <LatestProjectAnimate>
         <div className="relative gap-5 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 transition-all">
-          {projects_item.slice(0, 3).map((item, index) => {
-            return <div key={index.toString()}>{item}</div>;
+          {DATA.projects.slice(0, 3).map((item, index) => {
+            return (
+              <div key={index.toString()}>
+                <CardProject
+                  description={item.description}
+                  href={item.links[0].href}
+                  srcImage={item.image}
+                  technologies={item.technologies}
+                  title={item.title}
+                />
+              </div>
+            );
           })}
         </div>
         <Link

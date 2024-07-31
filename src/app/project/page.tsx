@@ -1,4 +1,5 @@
-import { projects_item } from "@/src/components/projects-item";
+import { CardProject } from "@/src/components/projects-item";
+import { DATA } from "@/src/data/resume";
 import clsx from "clsx";
 import { Metadata } from "next/types";
 
@@ -28,7 +29,7 @@ const ProjectPage = () => {
             PROJECTS
           </h1>
           <div className="gap-3 border-valorantBlack/50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 border-l w-[90%] md:w-[80%]">
-            {projects_item.map((item, index) => {
+            {DATA.projects.map((item, index) => {
               return (
                 <div
                   key={index}
@@ -41,7 +42,13 @@ const ProjectPage = () => {
                     "p-5 border-valorantBlack/50"
                   )}
                 >
-                  {item}
+                  <CardProject
+                    description={item.description}
+                    href={item.links[0].href}
+                    srcImage={item.image}
+                    technologies={item.technologies}
+                    title={item.title}
+                  />
                 </div>
               );
             })}
