@@ -10,4 +10,4 @@ const DINNextW1G = localFont({
   display: "swap",
 });
 
-export { TungstenBold, DINNextW1G };
+export { DINNextW1G, TungstenBold };

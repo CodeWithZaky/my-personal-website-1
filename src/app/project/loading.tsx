@@ -5,17 +5,17 @@ const SkeletonThumbnail = () => {
 
   return (
     <div className="w-full min-h-screen">
-      <div className="h-[4rem] w-full flex">
-        <div className="w-full md:w-[80%] border-r border-black/50 animate-pulse" />
+      <div className="flex w-full h-[4rem]">
+        <div className="border-r border-black/50 w-full md:w-[80%] animate-pulse" />
         <div className="w-0 md:w-[20%]" />
       </div>
       <div className="flex w-full">
-        <div className="w-full md:w-[80%] border-r border-t border-r-black/50 border-t-black/50 flex flex-col justify-end items-end">
-          <div className="w-[10px] h-[10px] bg-valorant animate-pulse" />
-          <h1 className="z-10 text-5xl font-bold text-valorant md:-mb-0 lg:-mb-9 md:text-7xl lg:text-9xl animate-pulse">
+        <div className="flex flex-col justify-end items-end border-t border-t-black/50 border-r border-r-black/50 w-full md:w-[80%]">
+          <div className="bg-valorant w-[10px] h-[10px] animate-pulse" />
+          <h1 className="z-10 md:-mb-0 lg:-mb-9 font-bold text-5xl text-valorant md:text-7xl lg:text-9xl animate-pulse">
             PROJECTS
           </h1>
-          <div className="w-[90%] md:w-[80%] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 border-l border-black/50 gap-3">
+          <div className="gap-3 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 border-black/50 border-l w-[90%] md:w-[80%]">
             {skeletonThumbnails.map((_, index) => (
               <div
                 key={index}
@@ -31,7 +31,7 @@ const SkeletonThumbnail = () => {
             ))}
           </div>
         </div>
-        <div className="w-0 md:w-[20%] border-t border-t-black/50" />
+        <div className="border-t border-t-black/50 w-0 md:w-[20%]" />
       </div>
     </div>
   );
